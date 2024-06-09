@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="https://nisembedded.github.io/sitemap_style.xsl" type="text/xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://nisembedded.github.io/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/blog/</loc>
+    </url>
+</urlset>
