@@ -1,5 +1,6 @@
 # The URL the site will be built for
 base_url = "https://nisembedded.github.io"
+author = "Boris Vinogradov"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -23,6 +24,8 @@ highlight_code = true
 
 [extra]
 menu = [
-    { name = "blog", url = "blog", trailing_slash = true }
+    { name = "about", url = "about", trailing_slash = true },
+    { name = "blog", url = "blog", trailing_slash = true },
 ]
-# Put all your custom variables here
+email = "nisembedded@gmail.com"
+copyright = "Copyright © $CURRENT_YEAR $AUTHOR $SEPARATOR Unless otherwise noted, the content of this website is available under the [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license."
