@@ -26,6 +26,12 @@ SNMP, ICE, JSON, XML, GPRC, Protobuf.
  - I have experience with the following languages: Java, Matlab.
  - Inter-language communication: MATLAB-Rust, Python-C.
 
+## Languages
+ - Russian (native)
+ - English (approx B1-B2)
+ - Spanish (approx A1-A2)
+ - Japan (approx A1-A2)
+
 ## Hobbies
 
 I love math as applied and pure part also love reading, walking, and [photography](https://www.instagram.com/nis_embedded/).
