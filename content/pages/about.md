@@ -33,7 +33,7 @@ SNMP, ICE, JSON, XML, GPRC, Protobuf.
  - Japan (approx A1-A2)
 
 ## Education and cources
- - Applied Information Science in Economics
+ - Applied Information Science in Economics, Bachelor Degree
 
 ## Hobbies
 
