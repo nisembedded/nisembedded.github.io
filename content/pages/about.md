@@ -3,7 +3,7 @@ path = "/about"
 title = "About me"
 template = "info-page.html"
 date = 2024-06-10
-updated = 2024-06-10
+updated = 2024-06-11
 description = "Here you can find more information about the author"
 +++
 
@@ -31,6 +31,9 @@ SNMP, ICE, JSON, XML, GPRC, Protobuf.
  - English (approx B1-B2)
  - Spanish (approx A1-A2)
  - Japan (approx A1-A2)
+
+## Education and cources
+ - Applied Information Science in Economics
 
 ## Hobbies
 
