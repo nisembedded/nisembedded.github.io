@@ -28,5 +28,12 @@ menu = [
     { name = "about", url = "about", trailing_slash = true },
     { name = "blog", url = "blog", trailing_slash = true },
 ]
+
+socials = [
+	{ name = "github", url = "https://github.com/nisembedded/", icon = "github" },
+	{ name = "instagram", url = "https://instagram.com/nisembedded", icon = "instagram" },
+]
+
 email = "nisembedded@gmail.com"
+
 copyright = "Copyright © $CURRENT_YEAR $AUTHOR $SEPARATOR Unless otherwise noted, the content of this website is available under the [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license."
