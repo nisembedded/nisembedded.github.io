@@ -3,7 +3,7 @@ path = "/about"
 title = "About me"
 template = "info-page.html"
 date = 2024-06-10
-updated = 2024-06-11
+updated = 2024-06-18
 description = "Here you can find more information about the author"
 +++
 
@@ -23,14 +23,14 @@ I am Boris Vinogradov, system and embedded designer and developer. have many exp
  - Network programming with/without external libraries. Network protocols middle and high level
 SNMP, ICE, JSON, XML, GPRC, Protobuf.
  - Designed and developed Linux kernel drivers and services, BSP.
- - I have experience with the following languages: Java, Matlab.
+ - I have experience with the following languages: Java, Matlab, Go.
  - Inter-language communication: MATLAB-Rust, Python-C.
 
 ## Languages
  - Russian (native)
- - English (approx B1-B2)
- - Spanish (approx A1-A2)
- - Japan (approx A1-A2)
+ - English (approx B1+ - B2)
+ - Spanish (approx A1 - A2)
+ - Japan (approx A1 - A2)
 
 ## Education and cources
  - Applied Information Science in Economics, Bachelor Degree
