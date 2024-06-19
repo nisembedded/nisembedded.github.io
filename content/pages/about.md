@@ -28,9 +28,9 @@ SNMP, ICE, JSON, XML, GPRC, Protobuf.
 
 ## Languages
  - Russian (native)
- - English (approx B1+ - B2)
- - Spanish (approx A1 - A2)
- - Japan (approx A1 - A2)
+ - English (B1+ - B2)
+ - Spanish (A1 - A2)
+ - Japan (A1 - A2)
 
 ## Education and cources
  - Applied Information Science in Economics, Bachelor Degree
