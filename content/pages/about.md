@@ -14,16 +14,17 @@ I am Boris Vinogradov, system and embedded designer and developer. have many exp
  - System design and applied computer science
  - Creation system from scratch and build toolchains
  - Languages: C++, C, Rust, Python, Java, Matlab, Go, Shell
- - Libraries: STL, Boost, PyCurl, Tokio, Async-std
+ - Libraries: STL, Boost, PyCurl, Tokio, Async-std, Tonic
  - Protocols: TPC/IP, GRPC
  - Formats: JSON, XML, Toml
  - Inter-language communication: MATLAB-Rust, Python-C
+ - Logs/Metrics: Logger, Datadog
 
 ## Languages
- - Russian (native)
- - English (B1+ - B2)
- - Spanish (A1 - A2)
- - Japan (A1 - A2)
+ - Russian (Native)
+ - English (Upper Intermediate)
+ - Spanish (Elementary)
+ - Japan (Beginner)
 
 ## Education and cources
  - Applied Information Science in Economics, Bachelor Degree
