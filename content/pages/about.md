@@ -14,11 +14,12 @@ I am Boris Vinogradov, system and embedded designer and developer. have many exp
  - System design and applied computer science
  - Creation system from scratch and build toolchains
  - Languages: C++, C, Rust, Python, Java, Matlab, Go, Shell
- - Libraries: STL, Boost, PyCurl, Tokio, Async-std, Tonic
- - Protocols: TPC/IP, GRPC
- - Formats: JSON, XML, Toml
+ - Libraries: STL, Boost, PyCurl, Tokio, Async-std, Tonic, GStreamer
+ - Protocols: TPC/IP, GRPC, RTP, WebRTC
+ - Formats: JSON, XML, Toml, Yaml
  - Inter-language communication: MATLAB-Rust, Python-C
  - Logs/Metrics: Logger, Datadog
+ - OSs: MacOS, Linux, Windows, FreeRTOS
 
 ## Languages
  - Russian (Native)
