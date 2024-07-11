@@ -19,7 +19,7 @@ I am Boris Vinogradov, system and embedded designer and developer. have many exp
  - Formats: JSON, XML, Toml, Yaml
  - Inter-language communication: MATLAB-Rust, Python-C
  - Logs/Metrics: Logger, Datadog
- - OSs: MacOS, Linux, Windows, FreeRTOS
+ - OS's: MacOS, Linux, Windows, FreeRTOS
 
 ## Languages
  - Russian (Native)
