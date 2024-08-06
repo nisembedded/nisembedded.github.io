@@ -33,7 +33,7 @@ I am Boris Vinogradov, system and embedded designer and developer. have many exp
 
 ## Hobbies
 
-I love math as applied and pure part also love reading, walking, and [photography](https://www.instagram.com/nis_embedded/).
+I love math as applied and pure part also love reading, walking, and [photography](https://www.instagram.com/nisembedded/).
 I collect old audio technics mainly created by Sony because I love mechatronics.
 
 ## Topics
