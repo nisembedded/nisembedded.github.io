@@ -17,7 +17,7 @@ I am Boris Vinogradov, system and embedded designer and developer. have many exp
  - Libraries: STL, Boost, PyCurl, Tokio, Async-std, Tonic, GStreamer
  - Protocols: TPC/IP, GRPC, RTP, WebRTC
  - Formats: JSON, XML, Toml, Yaml
- - Buildsystems: Makefile, CMake, Cargo, Basel
+ - Build systems: Makefile, CMake, Cargo, Basel
  - Inter-language communication: MATLAB-Rust, Python-C
  - Logs/Metrics: Logger, Datadog
  - OS's: MacOS, Linux, Windows, FreeRTOS
