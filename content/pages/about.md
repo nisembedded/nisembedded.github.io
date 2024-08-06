@@ -9,7 +9,7 @@ description = "Here you can find more information about the author"
 
 I am Boris Vinogradov, system and embedded designer and developer. have many experience with different areas about os development, system design, control engineering and programming.
 
-## Qaulifications
+## Qualifications
  - Math in field linear algebra, statistics and probability theoria
  - System design and applied computer science
  - Creation system from scratch and build toolchains
