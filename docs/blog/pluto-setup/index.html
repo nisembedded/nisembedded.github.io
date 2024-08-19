@@ -1,0 +1,333 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https://nisembedded.github.io">
+
+    
+    <title>nisembedded • Setup ADALM Pluto on Apple Sillicon</title>
+
+    
+    
+    
+
+    
+    <link rel="alternate" type="application/atom+xml" title="nisembedded" href="https://nisembedded.github.io/atom.xml">
+
+    
+    
+    
+        <link rel="stylesheet" href="https://nisembedded.github.io/inter_subset_en.css?h=d8cf4ad058d6c3a4015b">
+    
+
+    
+        <link rel="stylesheet" href="https://nisembedded.github.io/main.css?h=adbdec823fffb79bc7c3" />
+
+    <meta name="color-scheme" content="light dark" />
+        <meta name="description" content="Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro" />
+        <meta property="og:description" content="Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro" />
+
+    
+        <meta name="robots" content="index, nofollow" />
+    
+
+    <meta property="og:title" content="Setup ADALM Pluto on Apple Sillicon" />
+    <meta property="og:type" content="article" />
+
+    
+
+    <meta property="og:locale" content="en_GB" />
+
+    <meta property="og:url" content="https:&#x2F;&#x2F;nisembedded.github.io&#x2F;blog&#x2F;pluto-setup&#x2F;" /><meta property="og:site_name" content="nisembedded"><meta http-equiv="Content-Security-Policy"
+content="default-src 'self';font-src &#x27;self&#x27; data:;img-src &#x27;self&#x27; https:&#x2F;&#x2F;* data:;media-src &#x27;self&#x27;;style-src &#x27;self&#x27;;frame-src player.vimeo.com https:&#x2F;&#x2F;www.youtube-nocookie.com;connect-src 'self';script-src 'self' 'self'">
+
+        <noscript><link rel="stylesheet" href="https://nisembedded.github.io/no_js.css"/></noscript>
+        <script type="text/javascript" src="https://nisembedded.github.io/js/initializeTheme.min.js"></script>
+        <script defer src="https://nisembedded.github.io/js/themeSwitcher.min.js"></script></head>
+
+
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="nav-title">
+            <a class="home-title" href=https://nisembedded.github.io>nisembedded</a>
+        </div>
+            <div class="nav-navs">
+                <ul>
+                        
+                            <li>
+                                
+                                <a class="nav-links no-hover-padding" href="https://nisembedded.github.io/about/">
+                                about
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="nav-links no-hover-padding" href="https://nisembedded.github.io/blog/">
+                                blog
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="nav-links no-hover-padding" href="https://nisembedded.github.io/tags/">
+                                tags
+                                </a>
+                            </li>
+                        
+
+                    
+                    
+
+                    <li class="theme-switcher-wrapper js"><div
+        title="Toggle dark&#x2F;light mode"
+        class="theme-switcher"
+        tabindex="0"
+        role="button"
+        aria-label="Toggle dark mode"
+        aria-pressed="false">
+    </div><div
+        title="Reset mode to default"
+        class="theme-resetter"
+        tabindex="0"
+        role="button"
+        aria-hidden="true"
+        aria-label="Reset mode to default">
+    </div>
+
+</li>
+</ul>
+            </div>
+        
+    </nav>
+</header>
+
+    <div class="content">
+
+        
+        
+
+
+
+
+<main>
+    <article>
+        <h1 class="article-title">
+            Setup ADALM Pluto on Apple Sillicon
+        </h1>
+
+        <ul class="meta"><li>19th Aug 2024</li>&nbsp;•&nbsp;<li title="112 words">1 min read</li>&nbsp;•&nbsp;<li>Tags:&nbsp;</li><li><a href=https://nisembedded.github.io/tags/instruction/>instruction</a>,&nbsp;</li><li><a href=https://nisembedded.github.io/tags/tutorial/>tutorial</a>,&nbsp;</li><li><a href=https://nisembedded.github.io/tags/adalm-pluto/>ADALM Pluto</a>,&nbsp;</li><li><a href=https://nisembedded.github.io/tags/apple-sillicon/>Apple Sillicon</a>,&nbsp;</li><li><a href=https://nisembedded.github.io/tags/macos/>MacOS</a>,&nbsp;</li><li><a href=https://nisembedded.github.io/tags/brew/>Brew</a>,&nbsp;</li><li><a href=https://nisembedded.github.io/tags/python/>Python</a></li>
+                </ul><ul class="meta last-updated"><li>Last updated on 19th Aug 2024</li>
+                
+                
+            
+        </ul>
+
+        
+
+        
+        
+
+        <section class="body">
+            
+            
+            <h2 id="for-begining"><a class="header-anchor no-hover-padding" href="#for-begining" aria-label="Anchor link for: for-begining"><span class="link-icon" aria-hidden="true"></span></a>
+For begining</h2>
+<p>In this tutorial I'll try to collect every options and commands for how to setup ADALM Pluto on typical Apple Sillicon based devices (MacBook's includes Pro versions, iMacs, etc)</p>
+<h2 id="brew"><a class="header-anchor no-hover-padding" href="#brew" aria-label="Anchor link for: brew"><span class="link-icon" aria-hidden="true"></span></a>
+Brew</h2>
+<p>Update current state of brew to last one</p>
+<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> update</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> upgrade</span>
+</span></code></pre>
+<p>Install ADALM Pluto related tap. Don't worry that origin address, this guy works for AD officially.</p>
+<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> tap tfcollins/homebrew-formulae</span>
+</span></code></pre>
+<p>Than install components for ADALM Pluto.</p>
+<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> install libiio libad9361-iio</span>
+</span></code></pre>
+<h2 id="pluto"><a class="header-anchor no-hover-padding" href="#pluto" aria-label="Anchor link for: pluto"><span class="link-icon" aria-hidden="true"></span></a>
+Pluto</h2>
+<p>Plug the device to your Mac, on the desktop will showned PlutoSDR disk.</p>
+<p>use <code>iio_info</code> utitlity to check that device complete booting and ready to use.</p>
+<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iio_info</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Library</span></span><span class="z-meta z-function-call z-arguments z-shell"> version: 0.23 (git tag: v0.23</span><span class="z-meta z-function-call z-shell"></span>)
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Compiled</span></span><span class="z-meta z-function-call z-arguments z-shell"> with backends: xml ip usb</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Unable</span></span><span class="z-meta z-function-call z-arguments z-shell"> to create Local IIO context : Function not implemented (78</span><span class="z-meta z-function-call z-shell"></span>)
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Available</span></span><span class="z-meta z-function-call z-arguments z-shell"> contexts:</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">0:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0456:b673 (Analog Devices Inc. PlutoSDR (ADALM-PLUTO</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">,</span></span><span class="z-meta z-function-call z-arguments z-shell"> serial=1...0 <span class="z-keyword z-control z-regexp z-set z-begin z-shell">[</span>usb:2<span class="z-punctuation z-separator z-collate z-begin z-shell">.</span>4<span class="z-punctuation z-separator z-collate z-end z-shell">.</span>5<span class="z-keyword z-control z-regexp z-set z-end z-shell">]</span></span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">1:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 192.168.2.1 (Analog Devices PlutoSDR Rev.C (Z7010-AD9364</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">,</span></span><span class="z-meta z-function-call z-arguments z-shell"> serial=1...0 <span class="z-keyword z-control z-regexp z-set z-begin z-shell">[</span>ip:pluto.local.<span class="z-keyword z-control z-regexp z-set z-end z-shell">]</span></span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iio_info</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>u</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>usb:2.4.5<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span></span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Library</span></span><span class="z-meta z-function-call z-arguments z-shell"> version: 0.23 (git tag: v0.23</span><span class="z-meta z-function-call z-shell"></span>)
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Compiled</span></span><span class="z-meta z-function-call z-arguments z-shell"> with backends: xml ip usb</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">IIO</span></span><span class="z-meta z-function-call z-arguments z-shell"> context created with usb backend.</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Backend</span></span><span class="z-meta z-function-call z-arguments z-shell"> version: 0.24 (git tag: v0.24</span><span class="z-meta z-function-call z-shell"></span>)
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Backend</span></span><span class="z-meta z-function-call z-arguments z-shell"> description string: Linux (none</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">5.10.0-98231-g9dfba10b795d <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">54 SMP PREEMPT Mon Jul 11 14:38:48 CEST 2022 armv7l</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">IIO</span></span><span class="z-meta z-function-call z-arguments z-shell"> context has 15 attributes:</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hw_model:</span></span><span class="z-meta z-function-call z-arguments z-shell"> Analog Devices PlutoSDR Rev.C (Z7010-AD9364</span><span class="z-meta z-function-call z-shell"></span>)
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hw_model_variant:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hw_serial:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1...0</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">fw_version:</span></span><span class="z-meta z-function-call z-arguments z-shell"> v0.35</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ad9361-phy,xo_correction:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 40000046</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ad9361-phy,model:</span></span><span class="z-meta z-function-call z-arguments z-shell"> ad9364</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell">	<span class="z-storage z-modifier z-shell">local</span><span class="z-variable z-other z-readwrite z-assignment z-shell">,kernel:</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">5.10.0-98231-g9dfba10b795d</span></span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">uri:</span></span><span class="z-meta z-function-call z-arguments z-shell"> usb:2.4.5</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,idVendor:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0456</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,idProduct:</span></span><span class="z-meta z-function-call z-arguments z-shell"> b673</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,release:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 2.0</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,vendor:</span></span><span class="z-meta z-function-call z-arguments z-shell"> Analog Devices Inc.</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,product:</span></span><span class="z-meta z-function-call z-arguments z-shell"> PlutoSDR (ADALM-PLUTO</span><span class="z-meta z-function-call z-shell"></span>)
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,serial:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1...0</span>
+</span><span class="z-source z-shell z-bash">	<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,libusb:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1.0.27.11882</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">IIO</span></span><span class="z-meta z-function-call z-arguments z-shell"> context has 4 devices:</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">...</span></span>
+</span></code></pre>
+<h2 id="python"><a class="header-anchor no-hover-padding" href="#python" aria-label="Anchor link for: python"><span class="link-icon" aria-hidden="true"></span></a>
+Python</h2>
+<p>I use python3 originally used in system. (for me this is python3.9)
+Intall needed package for python</p>
+<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pip</span></span><span class="z-meta z-function-call z-arguments z-shell"> install pyadi-iio</span>
+</span></code></pre>
+<h2 id="let-s-talks-with-adalm-pluto"><a class="header-anchor no-hover-padding" href="#let-s-talks-with-adalm-pluto" aria-label="Anchor link for: let-s-talks-with-adalm-pluto"><span class="link-icon" aria-hidden="true"></span></a>
+Let's talks with ADALM Pluto</h2>
+<pre data-lang="python" class="language-python z-code"><code class="language-python" data-lang="python"><span class="z-source z-python"><span class="z-meta z-statement z-import z-python"><span class="z-keyword z-control z-import z-python">import</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">adi</span></span></span>
+</span><span class="z-source z-python">
+</span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> Create device from specific uri address
+</span></span><span class="z-source z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">sdr</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">adi</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">ad9364</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-variable z-parameter z-python">uri</span><span class="z-keyword z-operator z-assignment z-python">=</span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">usb:2.4.5<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+</span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> Get data from receiver channel
+</span></span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> Should return like this
+</span></span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> array([-15.-42.j, -60.-68.j, -44. -6.j, ...,  24. -5.j, -20. +1.j,
+</span></span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span>        -4.-28.j])
+</span></span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> for every calls 
+</span></span><span class="z-source z-python"><span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">sdr</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">rx</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+</span></code></pre>
+
+        </section>
+
+        
+        
+        
+        
+
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+
+        
+        
+
+        
+        
+
+    </article>
+</main>
+
+
+<span id="copy-success" class="hidden">
+        Copied!
+    </span>
+    <span id="copy-init" class="hidden">
+        Copy code to clipboard
+    </span>
+    <script defer src="https://nisembedded.github.io/js/copyCodeToClipboard.min.js"></script>
+    </div>
+    <footer>
+    <section>
+        <nav class="socials nav-navs">
+                <ul><li class="js"><a class="nav-links no-hover-padding social" href="#" data-encoded-email="bmlzZW1iZWRkZWRAZ21haWwuY29t"><img alt="email" title="email" src="https://nisembedded.github.io/social_icons/email.svg">
+                            </a>
+                        </li>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding social" rel=" me"  href=https://github.com/nisembedded/>
+                                    <img alt=github title=github src="https://nisembedded.github.io/social_icons/github.svg">
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding social" rel=" me"  href=https://instagram.com/nisembedded>
+                                    <img alt=instagram title=instagram src="https://nisembedded.github.io/social_icons/instagram.svg">
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            
+        </nav>
+
+        
+        <nav class="nav-navs">
+        </nav>
+
+        <div class="credits">
+            <small>
+                
+    
+    
+    
+    
+        
+            
+            
+            
+        
+    
+        
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    <p><p>Copyright © 2024 Boris Vinogradov • Unless otherwise noted, the content of this website is available under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0</a> license.</p>
+</p>
+
+                
+                Powered by
+                <a rel=""  href="https://www.getzola.org">Zola</a>
+                &amp;
+                <a rel=""  href="https://github.com/welpo/tabi">tabi</a>
+
+                </small>
+        </div>
+    </section>
+
+    <script src="https://nisembedded.github.io/js/decodeMail.min.js" async></script></footer>
+
+</body>
+
+</html>

@@ -11,4 +11,35 @@
     <url>
         <loc>https://nisembedded.github.io/blog/</loc>
     </url>
+    <url>
+        <loc>https://nisembedded.github.io/blog/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/blog/pluto-setup/</loc>
+        <lastmod>2024-08-19</lastmod>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/adalm-pluto/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/apple-sillicon/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/brew/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/instruction/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/macos/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/python/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/tutorial/</loc>
+    </url>
 </urlset>
