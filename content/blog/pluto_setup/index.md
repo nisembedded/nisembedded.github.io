@@ -97,3 +97,9 @@ sdr = adi.ad9364(uri="usb:2.4.5")
 #        -4.-28.j])
 # for every calls 
 sdr.rx()
+```
+
+### Links
+
+[main tap](https://github.com/tfcollins/homebrew-formulae)
+[pyadi-iio](https://github.com/analogdevicesinc/pyadi-iio)
