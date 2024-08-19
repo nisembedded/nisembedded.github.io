@@ -1,10 +1,12 @@
 +++
 title = "Latest posts"
-paginate_by = 5 # Set the number of posts per page
-template = "index.html"
+sort_by = "date"
+template = "section.html"
 
 [extra]
 header = {title = "Hello from embedded"}
+section_path = "blog/_index.md"
+max_posts = 4
 +++
 
 I'm system and embeded engineer and trying to change the world around me by the technologies and information.
