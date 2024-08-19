@@ -16,6 +16,7 @@ theme = "tabi"
 title = "nisembedded"
 description = "This is blog about embedded, control enginering and another electronics"
 
+taxonomies = [{name = "tags", feed = true}]
 
 [markdown]
 # Whether to do syntax highlighting
@@ -27,6 +28,7 @@ highlight_theme = "css"
 menu = [
     { name = "about", url = "about", trailing_slash = true },
     { name = "blog", url = "blog", trailing_slash = true },
+    { name = "tags", url = "tags", trailing_slash = true},
 ]
 
 socials = [
