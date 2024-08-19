@@ -37,7 +37,7 @@ brew install libiio libad9361-iio
 
 Plug the device to your Mac, on the desktop will showned PlutoSDR disk.
 
-use `iio_info` utitlity to check that device complete booting and ready to use.
+Use `iio_info` utitlity to check that device completed booting  process and it's ready to be used.
 
 ```zsh
 iio_info -s
@@ -78,7 +78,7 @@ IIO context has 4 devices:
 ## Python
 
 I use python3 originally used in system. (for me this is python3.9)
-Intall needed package for python
+The following packages should be installed to the system via preferred package manager (pip or conda)
 
 ```zsh
 pip install pyadi-iio
