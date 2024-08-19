@@ -5,7 +5,7 @@ updated = 2024-08-19
 description = "Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro"
 
 [taxonomies]
-tags = ["instruction", "tutorial", "ADALM Pluto", "Apple Sillicon", "MacOS", "Brew", "Python"]
+tags = ["instruction", "tutorial", "ADALM Pluto", "Apple Sillicon", "MacOS", "brew", "python"]
 +++
 
 ## For begining
