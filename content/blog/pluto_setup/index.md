@@ -1,7 +1,7 @@
 +++
 title = "Setup ADALM Pluto on Apple Sillicon"
 date = 2024-08-19
-updated = 2024-08-19
+updated = 2024-08-21
 description = "Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro"
 
 [taxonomies]
@@ -99,7 +99,10 @@ sdr = adi.ad9364(uri="usb:2.4.5")
 sdr.rx()
 ```
 
+Sometimes python crashes on internals of pyiio library. I hope it was on C part.
+
+
 ### Links
 
-[main tap](https://github.com/tfcollins/homebrew-formulae)
-[pyadi-iio](https://github.com/analogdevicesinc/pyadi-iio)
+- [main tap](https://github.com/tfcollins/homebrew-formulae)
+- [pyadi-iio](https://github.com/analogdevicesinc/pyadi-iio)
