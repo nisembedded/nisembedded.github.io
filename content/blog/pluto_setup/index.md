@@ -46,8 +46,8 @@ Library version: 0.23 (git tag: v0.23)
 Compiled with backends: xml ip usb
 Unable to create Local IIO context : Function not implemented (78)
 Available contexts:
-	0: 0456:b673 (Analog Devices Inc. PlutoSDR (ADALM-PLUTO)), serial=1...0 [usb:2.4.5]
-	1: 192.168.2.1 (Analog Devices PlutoSDR Rev.C (Z7010-AD9364)), serial=1...0 [ip:pluto.local.]
+    0: 0456:b673 (Analog Devices Inc. PlutoSDR (ADALM-PLUTO)), serial=1...0 [usb:2.4.5]
+    1: 192.168.2.1 (Analog Devices PlutoSDR Rev.C (Z7010-AD9364)), serial=1...0 [ip:pluto.local.]
 
 iio_info -u 'usb:2.4.5'
 Library version: 0.23 (git tag: v0.23)
@@ -56,21 +56,21 @@ IIO context created with usb backend.
 Backend version: 0.24 (git tag: v0.24)
 Backend description string: Linux (none) 5.10.0-98231-g9dfba10b795d #54 SMP PREEMPT Mon Jul 11 14:38:48 CEST 2022 armv7l
 IIO context has 15 attributes:
-	hw_model: Analog Devices PlutoSDR Rev.C (Z7010-AD9364)
-	hw_model_variant: 1
-	hw_serial: 1...0
-	fw_version: v0.35
-	ad9361-phy,xo_correction: 40000046
-	ad9361-phy,model: ad9364
-	local,kernel: 5.10.0-98231-g9dfba10b795d
-	uri: usb:2.4.5
-	usb,idVendor: 0456
-	usb,idProduct: b673
-	usb,release: 2.0
-	usb,vendor: Analog Devices Inc.
-	usb,product: PlutoSDR (ADALM-PLUTO)
-	usb,serial: 1...0
-	usb,libusb: 1.0.27.11882
+    hw_model: Analog Devices PlutoSDR Rev.C (Z7010-AD9364)
+    hw_model_variant: 1
+    hw_serial: 1...0
+    fw_version: v0.35
+    ad9361-phy,xo_correction: 40000046
+    ad9361-phy,model: ad9364
+    local,kernel: 5.10.0-98231-g9dfba10b795d
+    uri: usb:2.4.5
+    usb,idVendor: 0456
+    usb,idProduct: b673
+    usb,release: 2.0
+    usb,vendor: Analog Devices Inc.
+    usb,product: PlutoSDR (ADALM-PLUTO)
+    usb,serial: 1...0
+    usb,libusb: 1.0.27.11882
 IIO context has 4 devices:
 ...
 ```
