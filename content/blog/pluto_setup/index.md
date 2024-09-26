@@ -101,7 +101,6 @@ sdr.rx()
 
 Sometimes python crashes on internals of pyiio library. I hope it was on C part.
 
-
 ### Links
 
 - [main tap](https://github.com/tfcollins/homebrew-formulae)
