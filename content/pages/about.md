@@ -10,26 +10,29 @@ description = "Here you can find more information about the author"
 I am Boris Vinogradov, system and embedded designer and developer. have many experience with different areas about os development, system design, control engineering and programming.
 
 ## Qualifications
- - Math in field linear algebra, statistics and probability theoria
- - System design and applied computer science
- - Creation system from scratch and build toolchains
- - Languages: C++, C, Rust, Python, Java, Matlab, Go, Shell
- - Libraries: STL, Boost, PyCurl, Tokio, Async-std, Tonic, GStreamer
- - Protocols: TPC/IP, GRPC, RTP, WebRTC
- - Formats: JSON, XML, Toml, Yaml
- - Build systems: Makefile, CMake, Cargo, Basel
- - Inter-language communication: MATLAB-Rust, Python-C
- - Logs/Metrics: Logger, Datadog
- - OS's: MacOS, Linux, Windows, FreeRTOS
+
+- Math in field linear algebra, statistics and probability theoria
+- System design and applied computer science
+- Creation system from scratch and build toolchains
+- Languages: C++, C, Rust, Python, Java, Matlab, Go, Shell
+- Libraries: STL, Boost, PyCurl, Tokio, Async-std, Tonic, GStreamer
+- Protocols: TPC/IP, GRPC, RTP, WebRTC
+- Formats: JSON, XML, Toml, Yaml
+- Build systems: Makefile, CMake, Cargo, Basel
+- Inter-language communication: MATLAB-Rust, Python-C
+- Logs/Metrics: Logger, Datadog
+- OS's: MacOS, Linux, Windows, FreeRTOS
 
 ## Languages
- - Russian (Native)
- - English (Upper Intermediate)
- - Spanish (Elementary)
- - Japan (Beginner)
+
+- Russian (Native)
+- English (Upper Intermediate)
+- Spanish (Elementary)
+- Japan (Beginner)
 
 ## Education and cources
- - Applied Information Science in Economics, Bachelor Degree
+
+- Applied Information Science in Economics, Bachelor Degree
 
 ## Hobbies
 
