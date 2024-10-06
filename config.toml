@@ -34,6 +34,7 @@ menu = [
 socials = [
 	{ name = "github", url = "https://github.com/nisembedded/", icon = "github" },
 	{ name = "instagram", url = "https://instagram.com/nisembedded", icon = "instagram" },
+    { name = "youtube", url = "https://www.youtube.com/@NisEmbedded", icon = "youtube"},
 ]
 
 email = "nisembedded@gmail.com"
