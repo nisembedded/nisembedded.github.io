@@ -19,6 +19,10 @@
         <lastmod>2024-08-21</lastmod>
     </url>
     <url>
+        <loc>https://nisembedded.github.io/blog/stm32-setup/</loc>
+        <lastmod>2024-10-06</lastmod>
+    </url>
+    <url>
         <loc>https://nisembedded.github.io/tags/</loc>
     </url>
     <url>
@@ -38,6 +42,12 @@
     </url>
     <url>
         <loc>https://nisembedded.github.io/tags/python/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/stm/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/stm32/</loc>
     </url>
     <url>
         <loc>https://nisembedded.github.io/tags/tutorial/</loc>

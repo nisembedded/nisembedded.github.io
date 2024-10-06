@@ -10,7 +10,7 @@
     <meta name="base" content="https://nisembedded.github.io">
 
     
-    <title>nisembedded • Tags</title>
+    <title>nisembedded • Setup STM tools on Apple Sillicon</title>
 
     
     
@@ -29,21 +29,21 @@
         <link rel="stylesheet" href="https://nisembedded.github.io/main.css?h=723bd2449e111301496a" />
 
     <meta name="color-scheme" content="light dark" />
-        <meta name="description" content="This is blog about embedded, control enginering and another electronics" />
-        <meta property="og:description" content="This is blog about embedded, control enginering and another electronics" />
+        <meta name="description" content="Setup STM tools on Apple Sillicon based MacBook Pro" />
+        <meta property="og:description" content="Setup STM tools on Apple Sillicon based MacBook Pro" />
 
     
         <meta name="robots" content="index, nofollow" />
     
 
-    <meta property="og:title" content="nisembedded" />
+    <meta property="og:title" content="Setup STM tools on Apple Sillicon" />
     <meta property="og:type" content="article" />
 
     
 
     <meta property="og:locale" content="en_GB" />
 
-    <meta property="og:url" content="https:&#x2F;&#x2F;nisembedded.github.io&#x2F;tags&#x2F;" /><meta property="og:site_name" content="nisembedded"><meta http-equiv="Content-Security-Policy"
+    <meta property="og:url" content="https:&#x2F;&#x2F;nisembedded.github.io&#x2F;blog&#x2F;stm32-setup&#x2F;" /><meta property="og:site_name" content="nisembedded"><meta http-equiv="Content-Security-Policy"
 content="default-src 'self';font-src &#x27;self&#x27; data:;img-src &#x27;self&#x27; https:&#x2F;&#x2F;* data:;media-src &#x27;self&#x27;;style-src &#x27;self&#x27;;frame-src player.vimeo.com https:&#x2F;&#x2F;www.youtube-nocookie.com;connect-src 'self';script-src 'self' 'self'">
 
         <noscript><link rel="stylesheet" href="https://nisembedded.github.io/no_js.css"/></noscript>
@@ -112,54 +112,113 @@ content="default-src 'self';font-src &#x27;self&#x27; data:;img-src &#x27;self&#
 
         
         
-<h1 class="title-container section-title bottom-divider">
-    All tags
-</h1>
 
 
 
 
-<div id="tag-cloud" class="two-columns">
-    <ul class="tags"><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/adalm-pluto/">
-                        ADALM Pluto </a>
-                    <span> – </span>1 post
-            </li><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/apple-sillicon/">
-                        Apple Sillicon </a>
-                    <span> – </span>2 posts
-            </li><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/brew/">
-                        brew </a>
-                    <span> – </span>2 posts
-            </li><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/instruction/">
-                        instruction </a>
-                    <span> – </span>2 posts
-            </li><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/macos/">
-                        MacOS </a>
-                    <span> – </span>2 posts
-            </li><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/python/">
-                        python </a>
-                    <span> – </span>1 post
-            </li><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/stm/">
-                        STM </a>
-                    <span> – </span>1 post
-            </li><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/stm32/">
-                        STM32 </a>
-                    <span> – </span>1 post
-            </li><li class="tags-item">
-                    <a href="https://nisembedded.github.io/tags/tutorial/">
-                        tutorial </a>
-                    <span> – </span>2 posts
-            </li></ul>
-</div>
+<main>
+    <article>
+        <h1 class="article-title">
+            Setup STM tools on Apple Sillicon
+        </h1>
+
+        <ul class="meta"><li>6th Oct 2024</li>&nbsp;•&nbsp;<li title="216 words">2 min read</li>&nbsp;•&nbsp;<li>Tags:&nbsp;</li><li><a href="https://nisembedded.github.io/tags/instruction/">instruction</a>,&nbsp;</li><li><a href="https://nisembedded.github.io/tags/tutorial/">tutorial</a>,&nbsp;</li><li><a href="https://nisembedded.github.io/tags/stm/">STM</a>,&nbsp;</li><li><a href="https://nisembedded.github.io/tags/apple-sillicon/">Apple Sillicon</a>,&nbsp;</li><li><a href="https://nisembedded.github.io/tags/macos/">MacOS</a>,&nbsp;</li><li><a href="https://nisembedded.github.io/tags/brew/">brew</a>,&nbsp;</li><li><a href="https://nisembedded.github.io/tags/stm32/">STM32</a></li></ul><ul class="meta last-updated"><li>Updated on 6th Oct 2024</li>
+                
+                
+            
+        </ul>
+
+        
+
+        
+        
+
+        <section class="body">
+            
+            
+            <h2 id="for-begining"><a class="header-anchor no-hover-padding" href="#for-begining" aria-label="Anchor link for: for-begining"><span class="link-icon" aria-hidden="true"></span></a>
+For begining</h2>
+<p>In this tutorial I collect everything notes about setup STM tools on typical Apple Sillicon based devices (MacBook's includes Pro versions, iMacs, etc)</p>
+<h2 id="brew"><a class="header-anchor no-hover-padding" href="#brew" aria-label="Anchor link for: brew"><span class="link-icon" aria-hidden="true"></span></a>
+Brew</h2>
+<p>Install JDK, who needs for every STM tools</p>
+<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> install openjdk</span>
+</span></code></pre>
+<h2 id="stm32"><a class="header-anchor no-hover-padding" href="#stm32" aria-label="Anchor link for: stm32"><span class="link-icon" aria-hidden="true"></span></a>
+STM32</h2>
+<p>First of all, there are 2 kind of software that we will to install: STM32 Cube MX, IDE and STM32 Cube Programmer with security boot:</p>
+<img src="img/programms_list.png">
+<h3 id="stm32-cube-mx-ide"><a class="header-anchor no-hover-padding" href="#stm32-cube-mx-ide" aria-label="Anchor link for: stm32-cube-mx-ide"><span class="link-icon" aria-hidden="true"></span></a>
+STM32 Cube MX, IDE</h3>
+<p>This installing is simple, follows the <a href="https://www.st.com/en/development-tools/stm32cubeide.html">link</a> and download version for MacOS. Do it in automatic mode, no modifications.</p>
+<p>After installaction you have two programms:</p>
+<p>STM32 Cube MX for graphical setup and design of chip internals
+<img src="img/cubemx.png"></p>
+<p>And STM32 Cube IDE for writting code and debug.
+<img src="img/cubeide.png"></p>
+<h3 id="stm32-cube-programmer-trusted-package-creator"><a class="header-anchor no-hover-padding" href="#stm32-cube-programmer-trusted-package-creator" aria-label="Anchor link for: stm32-cube-programmer-trusted-package-creator"><span class="link-icon" aria-hidden="true"></span></a>
+STM32 Cube Programmer, Trusted Package Creator</h3>
+<p>These two software used for connect to STM32 MPU's like STM32MP157 and others.</p>
+<p>The installation is the same as for CubeIDE, follows the <a href="https://www.st.com/en/development-tools/stm32cubeprog.html">link</a> and download version for MacOS. Also not needed any modifications.</p>
+<p>After installaction you also have two programms:</p>
+<p>STM32 Cube Programmer
+<img src="img/cubeprogrammer.png"></p>
+<p>And STM32 Trusted Package Creator
+<img src="img/trustedpackagecreator.png"></p>
+<h2 id="final"><a class="header-anchor no-hover-padding" href="#final" aria-label="Anchor link for: final"><span class="link-icon" aria-hidden="true"></span></a>
+Final</h2>
+<p>After installation every tools should to check that everything is working, this will be described in my next publications.</p>
+
+        </section>
+
+        
+        
+        
+        
+
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+
+        
+        
+
+        
+        
+
+    </article>
+</main>
 
 
+<span id="copy-success" class="hidden">
+        Copied!
+    </span>
+    <span id="copy-init" class="hidden">
+        Copy code to clipboard
+    </span>
+    <script defer src="https://nisembedded.github.io/js/copyCodeToClipboard.min.js"></script>
     </div>
     <footer>
     <section>

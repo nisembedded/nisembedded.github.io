@@ -11,14 +11,14 @@
         <tabi:last_updated_on>Updated on $DATE</tabi:last_updated_on>
         <tabi:default_theme></tabi:default_theme>
         <tabi:post_listing_date>date</tabi:post_listing_date>
-        <tabi:current_section>MacOS</tabi:current_section>
-    </tabi:metadata><title>nisembedded - MacOS</title>
+        <tabi:current_section>STM32</tabi:current_section>
+    </tabi:metadata><title>nisembedded - STM32</title>
         <subtitle>This is blog about embedded, control enginering and another electronics</subtitle>
-    <link href="https://nisembedded.github.io/tags/macos/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://nisembedded.github.io/tags/macos/" rel="alternate" type="text/html"/>
+    <link href="https://nisembedded.github.io/tags/stm32/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://nisembedded.github.io/tags/stm32/" rel="alternate" type="text/html"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-10-06T00:00:00+00:00</updated>
-    <id>https://nisembedded.github.io/tags/macos/atom.xml</id><entry xml:lang="en">
+    <id>https://nisembedded.github.io/tags/stm32/atom.xml</id><entry xml:lang="en">
         <title>Setup STM tools on Apple Sillicon</title>
         <published>2024-10-06T00:00:00+00:00</published>
         <updated>2024-10-06T00:00:00+00:00</updated>
@@ -28,15 +28,5 @@
         <link rel="alternate" href="https://nisembedded.github.io/blog/stm32-setup/" type="text/html"/>
         <id>https://nisembedded.github.io/blog/stm32-setup/</id>
         <summary type="html">Setup STM tools on Apple Sillicon based MacBook Pro</summary>
-        </entry><entry xml:lang="en">
-        <title>Setup ADALM Pluto on Apple Sillicon</title>
-        <published>2024-08-19T00:00:00+00:00</published>
-        <updated>2024-08-21T00:00:00+00:00</updated>
-        <author>
-            <name>Boris Vinogradov</name>
-        </author>
-        <link rel="alternate" href="https://nisembedded.github.io/blog/pluto-setup/" type="text/html"/>
-        <id>https://nisembedded.github.io/blog/pluto-setup/</id>
-        <summary type="html">Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro</summary>
         </entry>
 </feed>

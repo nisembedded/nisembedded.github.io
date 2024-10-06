@@ -17,8 +17,18 @@
     <link href="https://nisembedded.github.io/tags/apple-sillicon/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://nisembedded.github.io/tags/apple-sillicon/" rel="alternate" type="text/html"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-08-21T00:00:00+00:00</updated>
+    <updated>2024-10-06T00:00:00+00:00</updated>
     <id>https://nisembedded.github.io/tags/apple-sillicon/atom.xml</id><entry xml:lang="en">
+        <title>Setup STM tools on Apple Sillicon</title>
+        <published>2024-10-06T00:00:00+00:00</published>
+        <updated>2024-10-06T00:00:00+00:00</updated>
+        <author>
+            <name>Boris Vinogradov</name>
+        </author>
+        <link rel="alternate" href="https://nisembedded.github.io/blog/stm32-setup/" type="text/html"/>
+        <id>https://nisembedded.github.io/blog/stm32-setup/</id>
+        <summary type="html">Setup STM tools on Apple Sillicon based MacBook Pro</summary>
+        </entry><entry xml:lang="en">
         <title>Setup ADALM Pluto on Apple Sillicon</title>
         <published>2024-08-19T00:00:00+00:00</published>
         <updated>2024-08-21T00:00:00+00:00</updated>
