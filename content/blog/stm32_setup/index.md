@@ -1,7 +1,7 @@
 +++
 title = "Setup STM tools on Apple Sillicon"
 date = 2024-10-06
-updated = 2024-10-06
+updated = 2024-10-15
 description = "Setup STM tools on Apple Sillicon based MacBook Pro"
 
 [taxonomies]
@@ -24,7 +24,7 @@ brew install openjdk
 
 First of all, there are 2 kind of software that we will to install: STM32 Cube MX, IDE and STM32 Cube Programmer with security boot:
 
-<img src="img/programms_list.png">
+![programms list](img/programms_list.png)
 
 ### STM32 Cube MX, IDE
 
@@ -33,10 +33,10 @@ This installing is simple, follows the [link](https://www.st.com/en/development-
 After installaction you have two programms:
 
 STM32 Cube MX for graphical setup and design of chip internals
-<img src="img/cubemx.png">
+![cubemx](img/cubemx.png)
 
 And STM32 Cube IDE for writting code and debug.
-<img src="img/cubeide.png">
+![cubeide](img/cubeide.png)
 
 ### STM32 Cube Programmer, Trusted Package Creator
 
@@ -47,10 +47,10 @@ The installation is the same as for CubeIDE, follows the [link](https://www.st.c
 After installaction you also have two programms:
 
 STM32 Cube Programmer
-<img src="img/cubeprogrammer.png">
+![cubeprogrammer](img/cubeprogrammer.png)
 
 And STM32 Trusted Package Creator
-<img src="img/trustedpackagecreator.png">
+![trustedpackagecreator](img/trustedpackagecreator.png)
 
 ## Final
 
