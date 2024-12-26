@@ -1,7 +1,7 @@
 +++
 title = "Setup ADALM Pluto on Apple Sillicon"
 date = 2024-08-19
-updated = 2024-08-21
+updated = 2024-12-26
 description = "Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro"
 
 [taxonomies]
@@ -14,7 +14,7 @@ In this tutorial I'll try to collect every options and commands for how to setup
 
 ## Brew
 
-Update current state of brew to last one
+Update current state of brew to latest one
 
 ```zsh
 brew update
