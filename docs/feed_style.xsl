@@ -14,7 +14,8 @@
         <meta charset="utf-8"/>
         <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="{/atom:feed/@xml:base}/main.css"/>
+        <xsl:variable name="baseUrl" select="/atom:feed/tabi:metadata/tabi:base_url"/>
+        <link rel="stylesheet" href="{$baseUrl}/main.css"/>
         <link rel="stylesheet" href="{/atom:feed/atom:link[@rel='extra-stylesheet']/@href}" />
 
       </head>

@@ -1,7 +1,7 @@
 +++
 title = "Install numpy and troubles"
-date = 2024-08-19
-updated = 2024-12-26
+date = 2025-03-07
+updated = 2025-03-07
 description = "Install numpy to macos by brew"
 
 [taxonomies]

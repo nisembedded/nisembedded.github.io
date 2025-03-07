@@ -2,6 +2,7 @@
 <?xml-stylesheet href="https://nisembedded.github.io/feed_style.xsl" type="text/xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <tabi:metadata xmlns:tabi="https://github.com/welpo/tabi">
+        <tabi:base_url>https:&#x2F;&#x2F;nisembedded.github.io</tabi:base_url>
         <tabi:separator>
             •
         </tabi:separator>
