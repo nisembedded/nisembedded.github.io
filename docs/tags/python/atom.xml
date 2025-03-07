@@ -19,6 +19,16 @@
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2024-12-26T00:00:00+00:00</updated>
     <id>https://nisembedded.github.io/tags/python/atom.xml</id><entry xml:lang="en">
+        <title>Install numpy and troubles</title>
+        <published>2024-08-19T00:00:00+00:00</published>
+        <updated>2024-12-26T00:00:00+00:00</updated>
+        <author>
+            <name>Boris Vinogradov</name>
+        </author>
+        <link rel="alternate" href="https://nisembedded.github.io/blog/numpy-troubles/" type="text/html"/>
+        <id>https://nisembedded.github.io/blog/numpy-troubles/</id>
+        <summary type="html">Install numpy to macos by brew</summary>
+        </entry><entry xml:lang="en">
         <title>Setup ADALM Pluto on Apple Sillicon</title>
         <published>2024-08-19T00:00:00+00:00</published>
         <updated>2024-12-26T00:00:00+00:00</updated>

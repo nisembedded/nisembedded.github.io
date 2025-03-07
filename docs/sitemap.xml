@@ -12,6 +12,10 @@
         <loc>https://nisembedded.github.io/blog/</loc>
     </url>
     <url>
+        <loc>https://nisembedded.github.io/blog/numpy-troubles/</loc>
+        <lastmod>2024-12-26</lastmod>
+    </url>
+    <url>
         <loc>https://nisembedded.github.io/blog/page/1/</loc>
     </url>
     <url>
@@ -39,6 +43,9 @@
     </url>
     <url>
         <loc>https://nisembedded.github.io/tags/macos/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/numpy/</loc>
     </url>
     <url>
         <loc>https://nisembedded.github.io/tags/python/</loc>

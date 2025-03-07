@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="base" content="https://nisembedded.github.io">
+
+    
+    <title>nisembedded • Install numpy and troubles</title>
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+        <link rel="stylesheet" href="https://nisembedded.github.io/inter_subset_en.css?h=d8cf4ad058d6c3a4015b">
+    
+
+    
+        <link rel="stylesheet" href="https://nisembedded.github.io/main.css?h=4a3dff148c520f191505" />
+
+    <meta name="color-scheme" content="light dark" />
+        <meta name="description" content="Install numpy to macos by brew" />
+        <meta property="og:description" content="Install numpy to macos by brew" />
+
+    
+        <meta name="robots" content="index, nofollow" />
+    
+
+    <meta property="og:title" content="Install numpy and troubles" />
+    <meta property="og:type" content="article" />
+
+    
+<meta property="og:locale" content="en_GB" />
+
+    <meta property="og:url" content="https:&#x2F;&#x2F;nisembedded.github.io&#x2F;blog&#x2F;numpy-troubles&#x2F;" /><meta property="og:site_name" content="nisembedded"><meta http-equiv="Content-Security-Policy"
+content="default-src 'self';font-src &#x27;self&#x27; data:;img-src &#x27;self&#x27; https:&#x2F;&#x2F;* data:;media-src &#x27;self&#x27;;style-src &#x27;self&#x27;;frame-src player.vimeo.com https:&#x2F;&#x2F;www.youtube-nocookie.com;connect-src 'self';script-src 'self' 'self'">
+
+        <noscript><link rel="stylesheet" href="https://nisembedded.github.io/no_js.css"/></noscript>
+        <script type="text/javascript" src="https://nisembedded.github.io/js/initializeTheme.min.js"></script>
+        <script defer src="https://nisembedded.github.io/js/themeSwitcher.min.js"></script></head>
+
+
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="nav-title">
+            <a class="home-title" href="https://nisembedded.github.io">nisembedded</a>
+        </div>
+            <div class="nav-navs">
+                <ul>
+                        
+                            <li>
+                                
+                                <a class="nav-links no-hover-padding" href="https://nisembedded.github.io/about/">
+                                about
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="nav-links no-hover-padding" href="https://nisembedded.github.io/blog/">
+                                blog
+                                </a>
+                            </li>
+                        
+                            <li>
+                                
+                                <a class="nav-links no-hover-padding" href="https://nisembedded.github.io/tags/">
+                                tags
+                                </a>
+                            </li>
+                        <div class="nav-navs" id="menu-icons-group">
+                        
+
+                        
+                        
+
+                        <li class="theme-switcher-wrapper js"><div
+        title="Toggle dark&#x2F;light mode"
+        class="theme-switcher"
+        tabindex="0"
+        role="button"
+        aria-label="Toggle dark mode"
+        aria-pressed="false">
+    </div><div
+        title="Reset mode to default"
+        class="theme-resetter arrow"
+        tabindex="0"
+        role="button"
+        aria-hidden="true"
+        aria-label="Reset mode to default">
+    </div>
+
+</li>
+</div>
+                </ul>
+            </div>
+        
+    </nav>
+</header>
+
+    <div class="content">
+
+        
+        
+
+
+
+
+<main>
+    <article>
+        <h1 class="article-title">
+            Install numpy and troubles
+        </h1>
+
+        <ul class="meta">
+                <li>19th Aug 2024</li><li title="153 words"><span class='separator' aria-hidden='true'>•</span>1 min read</li><li class="tag"><span class='separator' aria-hidden='true'>•</span>Tags:&nbsp;</li><li class="tag"><a href="https://nisembedded.github.io/tags/instruction/">instruction</a>,&nbsp;</li><li class="tag"><a href="https://nisembedded.github.io/tags/tutorial/">tutorial</a>,&nbsp;</li><li class="tag"><a href="https://nisembedded.github.io/tags/numpy/">numpy</a>,&nbsp;</li><li class="tag"><a href="https://nisembedded.github.io/tags/apple-sillicon/">Apple Sillicon</a>,&nbsp;</li><li class="tag"><a href="https://nisembedded.github.io/tags/macos/">MacOS</a>,&nbsp;</li><li class="tag"><a href="https://nisembedded.github.io/tags/brew/">brew</a>,&nbsp;</li><li class="tag"><a href="https://nisembedded.github.io/tags/python/">python</a></li></ul><ul class="meta last-updated"><li>Updated on 26th Dec 2024</li>
+        </ul>
+
+        <section class="body"><h2 id="nothing-wrong-but"><a class="header-anchor no-hover-padding" href="#nothing-wrong-but" aria-label="Anchor link for: nothing-wrong-but"><span class="link-icon" aria-hidden="true"></span></a>
+Nothing wrong but...</h2>
+<p>Once I needed in <code>numpy</code> package on my laptop. I try to install as normal pip package by <code>python3 -m pip install numpy</code> but unfortunatelly it generates errors like this:</p>
+<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell"><span class="z-meta z-group z-expansion z-job z-shell"><span class="z-punctuation z-definition z-variable z-job z-shell">%</span></span></span></span><span class="z-meta z-function-call z-arguments z-shell"> python3<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> pip install numpy</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">error:</span></span><span class="z-meta z-function-call z-arguments z-shell"> externally-managed-environment</span>
+</span><span class="z-source z-shell z-bash">
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">×</span></span><span class="z-meta z-function-call z-arguments z-shell"> This environment is externally managed</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">╰─</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> To install Python packages system-wide, try brew install</span>
+</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">xyz,</span></span><span class="z-meta z-function-call z-arguments z-shell"> where xyz is the package you are trying to</span>
+</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">install.</span></span>
+</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">...</span></span><span class="z-meta z-function-call z-arguments z-shell"> bla bla bla bla bla</span>
+</span></code></pre>
+<p>Okay, said I, lets install by brew.</p>
+<h2 id="brew-and-issues-who-comes-from-anniversary-begins"><a class="header-anchor no-hover-padding" href="#brew-and-issues-who-comes-from-anniversary-begins" aria-label="Anchor link for: brew-and-issues-who-comes-from-anniversary-begins"><span class="link-icon" aria-hidden="true"></span></a>
+Brew and issues who comes from anniversary begins</h2>
+<p>Installing by brew will be without surprise things I. <code>brew install numpy</code> and it was enough? Yes, but after run the python and imported package I encount another one issue:</p>
+<pre data-lang="python" class="language-python z-code"><code class="language-python" data-lang="python"><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-statement z-import z-python"><span class="z-keyword z-control z-import z-python">import</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">numpy</span></span> <span class="z-keyword z-control z-import z-as z-python">as</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span></span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">matrix</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-sequence z-list z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">[</span><span class="z-meta z-sequence z-list z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">[</span><span class="z-constant z-numeric z-integer z-decimal z-python">1</span><span class="z-punctuation z-separator z-sequence z-python">,</span><span class="z-constant z-numeric z-integer z-decimal z-python">2</span><span class="z-punctuation z-section z-sequence z-end z-python">]</span></span><span class="z-punctuation z-separator z-sequence z-python">,</span><span class="z-meta z-sequence z-list z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">[</span><span class="z-constant z-numeric z-integer z-decimal z-python">3</span><span class="z-punctuation z-separator z-sequence z-python">,</span><span class="z-constant z-numeric z-integer z-decimal z-python">4</span><span class="z-punctuation z-section z-sequence z-end z-python">]</span></span><span class="z-punctuation z-section z-sequence z-end z-python">]</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">Traceback</span></span></span> </span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">most</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">recent</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">call</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">last</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span><span class="z-punctuation z-separator z-annotation z-variable z-python">:</span>
+</span><span class="z-source z-python">  <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">File</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">&lt;python-input-1&gt;<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span>, <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">line</span></span> <span class="z-constant z-numeric z-integer z-decimal z-python">1</span>, <span class="z-keyword z-operator z-logical z-python">in</span> <span class="z-keyword z-operator z-comparison z-python">&lt;</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">module</span></span><span class="z-keyword z-operator z-comparison z-python">&gt;</span>
+</span><span class="z-source z-python">    <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">matrix</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-sequence z-list z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">[</span><span class="z-meta z-sequence z-list z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">[</span><span class="z-constant z-numeric z-integer z-decimal z-python">1</span><span class="z-punctuation z-separator z-sequence z-python">,</span><span class="z-constant z-numeric z-integer z-decimal z-python">2</span><span class="z-punctuation z-section z-sequence z-end z-python">]</span></span><span class="z-punctuation z-separator z-sequence z-python">,</span><span class="z-meta z-sequence z-list z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">[</span><span class="z-constant z-numeric z-integer z-decimal z-python">3</span><span class="z-punctuation z-separator z-sequence z-python">,</span><span class="z-constant z-numeric z-integer z-decimal z-python">4</span><span class="z-punctuation z-section z-sequence z-end z-python">]</span></span><span class="z-punctuation z-section z-sequence z-end z-python">]</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+</span><span class="z-source z-python">    <span class="z-keyword z-operator z-arithmetic z-python">^</span><span class="z-keyword z-operator z-arithmetic z-python">^</span><span class="z-keyword z-operator z-arithmetic z-python">^</span><span class="z-keyword z-operator z-arithmetic z-python">^</span><span class="z-keyword z-operator z-arithmetic z-python">^</span><span class="z-keyword z-operator z-arithmetic z-python">^</span><span class="z-keyword z-operator z-arithmetic z-python">^</span><span class="z-keyword z-operator z-arithmetic z-python">^</span><span class="z-keyword z-operator z-arithmetic z-python">^</span>
+</span><span class="z-source z-python"><span class="z-meta z-qualified-name z-python"><span class="z-support z-type z-exception z-python">AttributeError</span></span><span class="z-punctuation z-separator z-annotation z-variable z-python">:</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">module</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">numpy<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">has</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">no</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">attribute</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">matrix<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> 
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-support z-function z-builtin z-python">dir</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-sequence z-list z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">[</span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">__doc__<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span><span class="z-punctuation z-separator z-sequence z-python">,</span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">__file__<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span><span class="z-punctuation z-separator z-sequence z-python">,</span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">__loader__<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span><span class="z-punctuation z-separator z-sequence z-python">,</span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">__name__<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span><span class="z-punctuation z-separator z-sequence z-python">,</span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">__package__<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span><span class="z-punctuation z-separator z-sequence z-python">,</span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">__path__<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span><span class="z-punctuation z-separator z-sequence z-python">,</span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">__spec__<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span><span class="z-punctuation z-section z-sequence z-end z-python">]</span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">matrix</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">Traceback</span></span></span> </span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">most</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">recent</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">call</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">last</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span><span class="z-punctuation z-separator z-annotation z-variable z-python">:</span>
+</span><span class="z-source z-python">  <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">File</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">&lt;python-input-2&gt;<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span>, <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">line</span></span> <span class="z-constant z-numeric z-integer z-decimal z-python">1</span>, <span class="z-keyword z-operator z-logical z-python">in</span> <span class="z-keyword z-operator z-comparison z-python">&lt;</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">module</span></span><span class="z-keyword z-operator z-comparison z-python">&gt;</span>
+</span><span class="z-source z-python">    <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">matrix</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-qualified-name z-python"><span class="z-support z-type z-exception z-python">AttributeError</span></span><span class="z-punctuation z-separator z-annotation z-variable z-python">:</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">module</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">numpy<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">has</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">no</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">attribute</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">matrix<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">array</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">Traceback</span></span></span> </span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">most</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">recent</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">call</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">last</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span><span class="z-punctuation z-separator z-annotation z-variable z-python">:</span>
+</span><span class="z-source z-python">  <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">File</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">&lt;python-input-3&gt;<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span>, <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">line</span></span> <span class="z-constant z-numeric z-integer z-decimal z-python">1</span>, <span class="z-keyword z-operator z-logical z-python">in</span> <span class="z-keyword z-operator z-comparison z-python">&lt;</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">module</span></span><span class="z-keyword z-operator z-comparison z-python">&gt;</span>
+</span><span class="z-source z-python">    <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">array</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-qualified-name z-python"><span class="z-support z-type z-exception z-python">AttributeError</span></span><span class="z-punctuation z-separator z-annotation z-variable z-python">:</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">module</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">numpy<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">has</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">no</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">attribute</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">array<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">dot</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">Traceback</span></span></span> </span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">most</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">recent</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">call</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">last</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span><span class="z-punctuation z-separator z-annotation z-variable z-python">:</span>
+</span><span class="z-source z-python">  <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">File</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">&lt;python-input-4&gt;<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span>, <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">line</span></span> <span class="z-constant z-numeric z-integer z-decimal z-python">1</span>, <span class="z-keyword z-operator z-logical z-python">in</span> <span class="z-keyword z-operator z-comparison z-python">&lt;</span><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">module</span></span><span class="z-keyword z-operator z-comparison z-python">&gt;</span>
+</span><span class="z-source z-python">    <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">dot</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-qualified-name z-python"><span class="z-support z-type z-exception z-python">AttributeError</span></span><span class="z-punctuation z-separator z-annotation z-variable z-python">:</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">module</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">numpy<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">has</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">no</span></span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">attribute</span></span> <span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">dot<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-support z-variable z-magic z-python">__file__</span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-support z-variable z-magic z-python">__name__</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">numpy<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-support z-variable z-magic z-python">__package__</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">numpy<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span>
+</span><span class="z-source z-python"><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span><span class="z-keyword z-operator z-comparison z-python">&gt;</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">np</span><span class="z-punctuation z-accessor z-dot z-python">.</span><span class="z-meta z-generic-name z-python">__path__</span></span>
+</span><span class="z-source z-python"><span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">_NamespacePath</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-meta z-sequence z-list z-python"><span class="z-punctuation z-section z-sequence z-begin z-python">[</span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&#39;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-single z-python">/opt/homebrew/lib/python3.13/site-packages/numpy<span class="z-punctuation z-definition z-string z-end z-python">&#39;</span></span></span><span class="z-punctuation z-section z-sequence z-end z-python">]</span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
+</span></code></pre>
+<p><strong>After going to the install path I saw that each directory was empty!!!</strong> Crazy day. After googling I found some <a href="https://github.com/Homebrew/homebrew-core/issues/15698">closed issue</a> in brew github.</p>
+<p>The final soultion was: <code>brew link --overwrite numpy</code>. Why since 2017 nobody haven't fixed this part of broken code?!</p>
+<h2 id="conclusions"><a class="header-anchor no-hover-padding" href="#conclusions" aria-label="Anchor link for: conclusions"><span class="link-icon" aria-hidden="true"></span></a>
+Conclusions</h2>
+<p>If you're installing something from system maintained package be sure that your installation is correct. Use overrides, like <code>virtual env</code> instead of brew.</p>
+
+        </section>
+
+        
+        
+        
+
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+            
+            
+            
+
+            
+        
+        
+
+    </article>
+</main>
+
+
+<span id="copy-success" class="hidden">
+        Copied!
+    </span>
+    <span id="copy-init" class="hidden">
+        Copy code to clipboard
+    </span>
+    <script defer src="https://nisembedded.github.io/js/copyCodeToClipboard.min.js"></script>
+    </div>
+    <footer>
+    <section>
+        <nav class="socials nav-navs">
+                <ul>
+                    
+                    
+                    
+                    <li class="js"><a class="nav-links no-hover-padding social" href="#" data-encoded-email="bmlzZW1iZWRkZWRAZ21haWwuY29t"><img loading="lazy" alt="email" title="email" src="https://nisembedded.github.io/social_icons/email.svg">
+                            </a>
+                        </li>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding social" rel=" me"  href="https://github.com/nisembedded/">
+                                    <img loading="lazy" alt="github" title="github" src="https://nisembedded.github.io/social_icons/github.svg">
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding social" rel=" me"  href="https://instagram.com/nisembedded">
+                                    <img loading="lazy" alt="instagram" title="instagram" src="https://nisembedded.github.io/social_icons/instagram.svg">
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="nav-links no-hover-padding social" rel=" me"  href="https://www.youtube.com/@NisEmbedded">
+                                    <img loading="lazy" alt="youtube" title="youtube" src="https://nisembedded.github.io/social_icons/youtube.svg">
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            
+        </nav>
+
+        
+        <nav class="nav-navs">
+        </nav>
+
+        <div class="credits">
+            <small>
+                
+    
+    
+    
+    
+        
+            
+            
+            
+        
+    
+        
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    <p><p>Copyright © 2025 Boris Vinogradov • Unless otherwise noted, the content of this website is available under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0</a> license.</p>
+</p>
+
+                
+                Powered by
+                <a rel=""  href="https://www.getzola.org">Zola</a>
+                &amp;
+                <a rel=""  href="https://github.com/welpo/tabi">tabi</a>
+
+                </small>
+        </div>
+    </section>
+
+    <script src="https://nisembedded.github.io/js/decodeMail.min.js" async></script></footer>
+
+</body>
+
+</html>
