@@ -1,7 +1,7 @@
 +++
 title = "Setup ADALM Pluto on Apple Sillicon"
 date = 2024-08-19
-updated = 2024-12-26
+updated = 2025-05-05
 description = "Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro"
 
 [taxonomies]
@@ -77,14 +77,60 @@ IIO context has 4 devices:
 
 ## Python
 
-I use python3 originally used in system. (for me this is python3.9)
-The following packages should be installed to the system via preferred package manager (pip or conda)
+So system installed python or provided by `brew` have some restrictions about install packages from pip source.
 
 ```zsh
-pip install pyadi-iio
+pip3 install pyadi-iio
+error: externally-managed-environment
+
+× This environment is externally managed
+╰─> To install Python packages system-wide, try brew install
+    xyz, where xyz is the package you are trying to
+    install.
+
+    If you wish to install a Python library that isn't in Homebrew,
+    use a virtual environment:
+
+    python3 -m venv path/to/venv
+    source path/to/venv/bin/activate
+    python3 -m pip install xyz
+```
+
+Instead of that I highly recommend to use virtual env based installation or conda.
+
+For example you have your directory of `venv` named `Develop/bin` and `Develop` placed in your home directory.
+
+Let's create virtual env for this path:
+
+```zsh
+python3 -m venv ~/Develop --system-site-packages
+```
+
+After installation of package will be simply as expected:
+
+```zsh
+~/Develop/bin/pip install pyadi-iio
+Collecting pyadi-iio
+  Downloading pyadi_iio-0.0.19-py3-none-any.whl.metadata (4.5 kB)
+Requirement already satisfied: numpy>=1.20 in /opt/homebrew/lib/python3.13/site-packages (from pyadi-iio) (2.2.5)
+Collecting pylibiio>=0.25 (from pyadi-iio)
+  Using cached pylibiio-0.25-py3-none-any.whl.metadata (5.9 kB)
+Downloading pyadi_iio-0.0.19-py3-none-any.whl (188 kB)
+Using cached pylibiio-0.25-py3-none-any.whl (11 kB)
+Installing collected packages: pylibiio, pyadi-iio
+Successfully installed pyadi-iio-0.0.19 pylibiio-0.25
+
+[notice] A new release of pip is available: 25.0.1 -> 25.1.1
+[notice] To update, run: pip3 install --upgrade pip
 ```
 
 ## Let's talks with ADALM Pluto
+
+Run python from our `venv` where we already installed `pyadi-iio` package:
+
+```zsh
+~/Develop/bin/python
+```
 
 ```python
 import adi
