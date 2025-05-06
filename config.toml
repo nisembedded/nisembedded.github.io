@@ -31,6 +31,7 @@ highlight_theme = "css"
 menu = [
     { name = "about", url = "about", trailing_slash = true },
     { name = "blog", url = "blog", trailing_slash = true },
+    { name = "projects", url = "projects", trailing_slash = true },
     { name = "tags", url = "tags", trailing_slash = true},
 ]
 
