@@ -13,6 +13,9 @@ output_dir = "docs"
 # Setup project theme
 theme = "tabi"
 
+# Add generation feed
+generate_feeds = true
+
 title = "nisembedded"
 description = "This is blog about embedded, control enginering and another electronics"
 

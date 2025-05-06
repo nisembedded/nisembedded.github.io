@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://nisembedded.github.io/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <tabi:metadata xmlns:tabi="https://github.com/welpo/tabi">
+        <tabi:base_url>https:&#x2F;&#x2F;nisembedded.github.io</tabi:base_url>
+        <tabi:separator>
+            •
+        </tabi:separator>
+        <tabi:about_feeds>This is a web feed, also known as an Atom feed. Subscribe by copying the URL from the address bar into your newsreader. Visit About Feeds to learn more and get started. It&#x27;s free.</tabi:about_feeds>
+        <tabi:visit_the_site>Visit website</tabi:visit_the_site>
+        <tabi:recent_posts>Recent posts</tabi:recent_posts>
+        <tabi:last_updated_on>Updated on $DATE</tabi:last_updated_on>
+        <tabi:default_theme></tabi:default_theme>
+        <tabi:post_listing_date>date</tabi:post_listing_date>
+        <tabi:current_section>nisembedded</tabi:current_section>
+    </tabi:metadata><title>nisembedded</title>
+        <subtitle>This is blog about embedded, control enginering and another electronics</subtitle>
+    <link href="https://nisembedded.github.io/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://nisembedded.github.io" rel="alternate" type="text/html"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-04-01T00:00:00+00:00</updated>
+    <id>https://nisembedded.github.io/atom.xml</id><entry xml:lang="en">
+        <title>Install numpy and troubles</title>
+        <published>2025-03-07T00:00:00+00:00</published>
+        <updated>2025-03-07T00:00:00+00:00</updated>
+        <author>
+            <name>Boris Vinogradov</name>
+        </author>
+        <link rel="alternate" href="https://nisembedded.github.io/blog/numpy-troubles/" type="text/html"/>
+        <id>https://nisembedded.github.io/blog/numpy-troubles/</id>
+        <summary type="html">Install numpy to macos by brew</summary>
+        </entry><entry xml:lang="en">
+        <title>Setup STM tools on Apple Sillicon</title>
+        <published>2024-10-06T00:00:00+00:00</published>
+        <updated>2024-10-15T00:00:00+00:00</updated>
+        <author>
+            <name>Boris Vinogradov</name>
+        </author>
+        <link rel="alternate" href="https://nisembedded.github.io/blog/stm32-setup/" type="text/html"/>
+        <id>https://nisembedded.github.io/blog/stm32-setup/</id>
+        <summary type="html">Setup STM tools on Apple Sillicon based MacBook Pro</summary>
+        </entry><entry xml:lang="en">
+        <title>Setup ADALM Pluto on Apple Sillicon</title>
+        <published>2024-08-19T00:00:00+00:00</published>
+        <updated>2024-12-26T00:00:00+00:00</updated>
+        <author>
+            <name>Boris Vinogradov</name>
+        </author>
+        <link rel="alternate" href="https://nisembedded.github.io/blog/pluto-setup/" type="text/html"/>
+        <id>https://nisembedded.github.io/blog/pluto-setup/</id>
+        <summary type="html">Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro</summary>
+        </entry><entry xml:lang="en">
+        <title>About me</title>
+        <published>2024-06-10T00:00:00+00:00</published>
+        <updated>2025-04-01T00:00:00+00:00</updated>
+        <author>
+            <name>Boris Vinogradov</name>
+        </author>
+        <link rel="alternate" href="https://nisembedded.github.io/about/" type="text/html"/>
+        <id>https://nisembedded.github.io/about/</id>
+        <summary type="html">Here you can find more information about the author</summary>
+        </entry>
+</feed>
