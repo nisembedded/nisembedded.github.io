@@ -3,7 +3,7 @@ path = "/about"
 title = "About me"
 template = "info-page.html"
 date = 2024-06-10
-updated = 2025-04-01
+updated = 2025-05-06
 description = "Here you can find more information about the author"
 +++
 
@@ -28,7 +28,7 @@ I am Boris Vinogradov, system and embedded designer and developer. Have many exp
 - Russian (Native)
 - English (Advanced)
 - Spanish (Intermediate)
-- Japan (Beginner)
+- Japan (Elementary)
 
 ## Education and courses
 
@@ -36,7 +36,7 @@ I am Boris Vinogradov, system and embedded designer and developer. Have many exp
 
 ## Hobbies
 
-I love math as applied and pure part also love reading, walking, [photography](https://www.instagram.com/nisembedded/), and [video blogging](https://www.youtube.com/@NisEmbedded).
+I love math as applied and pure part also love reading, walking, drawing, [photography](https://www.instagram.com/nisembedded/), and [video blogging](https://www.youtube.com/@NisEmbedded).
 I collect old audio technics mainly created by Sony because I love mechatronics.
 
 ## Topics
