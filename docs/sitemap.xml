@@ -30,6 +30,9 @@
         <loc>https://nisembedded.github.io/projects/</loc>
     </url>
     <url>
+        <loc>https://nisembedded.github.io/projects/pcie-hostless/</loc>
+    </url>
+    <url>
         <loc>https://nisembedded.github.io/tags/</loc>
     </url>
     <url>
@@ -42,16 +45,31 @@
         <loc>https://nisembedded.github.io/tags/brew/</loc>
     </url>
     <url>
+        <loc>https://nisembedded.github.io/tags/hardware/</loc>
+    </url>
+    <url>
         <loc>https://nisembedded.github.io/tags/instruction/</loc>
     </url>
     <url>
         <loc>https://nisembedded.github.io/tags/macos/</loc>
     </url>
     <url>
+        <loc>https://nisembedded.github.io/tags/networking/</loc>
+    </url>
+    <url>
         <loc>https://nisembedded.github.io/tags/numpy/</loc>
     </url>
     <url>
+        <loc>https://nisembedded.github.io/tags/pcie/</loc>
+    </url>
+    <url>
         <loc>https://nisembedded.github.io/tags/python/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/rpico2/</loc>
+    </url>
+    <url>
+        <loc>https://nisembedded.github.io/tags/rust/</loc>
     </url>
     <url>
         <loc>https://nisembedded.github.io/tags/stm/</loc>
