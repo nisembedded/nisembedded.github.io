@@ -21,6 +21,11 @@ description = "This is blog about embedded, control enginering and another elect
 
 taxonomies = [{name = "tags", feed = true}]
 
+[extra.analytics]
+service = "umami"
+id = "7f0ca481-23cb-48e1-be7d-82f6604e30f1"
+
+
 [markdown]
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
