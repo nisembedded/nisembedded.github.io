@@ -48,4 +48,4 @@ socials = [
 
 email = "nisembedded@gmail.com"
 
-copyright = "Copyright © $CURRENT_YEAR $AUTHOR $SEPARATOR Unless otherwise noted, the content of this website is available under the [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license."
+copyright = "Copyright © 2024 - $CURRENT_YEAR $AUTHOR $SEPARATOR Unless otherwise noted, the content of this website is available under the [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/deed.en) license."
