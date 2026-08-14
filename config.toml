@@ -52,6 +52,8 @@ socials = [
 	{ name = "instagram", url = "https://instagram.com/nisembedded", icon = "instagram" },
     { name = "youtube", url = "https://www.youtube.com/@NisEmbedded", icon = "youtube"},
     { name = "twitter", url = "https://twitter.com/nisembedded", icon = "twitter"},
+    { name = "deviantart", url = "https://www.deviantart.com/111u3", icon = "deviantart"},
+    { name = "linkedin", url = "https://www.linkedin.com/in/nisembedded", icon = "linkedin"},
 ]
 
 email = "nisembedded@gmail.com"
