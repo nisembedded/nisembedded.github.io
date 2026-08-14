@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8"><meta http-equiv="Content-Security-Policy"
-content="default-src 'self';font-src &#x27;self&#x27; data:;img-src &#x27;self&#x27; https:&#x2F;&#x2F;* data:;media-src &#x27;self&#x27;;style-src &#x27;self&#x27;;frame-src player.vimeo.com https:&#x2F;&#x2F;www.youtube-nocookie.com;connect-src 'self' *.umami.dev cloud.umami.is;script-src 'self' cloud.umami.is 'self'">
+content="default-src 'self';font-src 'self' data:;img-src 'self' https://* data:;media-src 'self';style-src 'self';frame-src player.vimeo.com https://www.youtube-nocookie.com;connect-src 'self' *.umami.dev cloud.umami.is;script-src 'self' cloud.umami.is 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="base" content="https://nisembedded.github.io">
 
@@ -36,7 +36,7 @@ nisembedded • Setup ADALM Pluto on Apple Sillicon</title>
     
 
     
-        <link rel="stylesheet" href="https://nisembedded.github.io/main.css?h=fe8c9607d92b0cda0f8f" />
+        <link rel="stylesheet" href="https://nisembedded.github.io/main.css?h=be7f63312b6c5c196cba" />
 
     <meta name="color-scheme" content="light dark" />
         <meta name="description" content="Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro" />
@@ -66,17 +66,18 @@ nisembedded • Setup ADALM Pluto on Apple Sillicon</title>
     data-do-not-track="true">
     </script>
 
-    
+
 
     
 </head>
 
 
 <body>
+    <a href="#main-content" id="skip-link">Skip to content</a>
     <header>
     <nav class="navbar">
         <div class="nav-title">
-            <a class="home-title" href="https://nisembedded.github.io">nisembedded</a>
+            <a class="home-title" href="https://nisembedded.github.io/">nisembedded</a>
         </div>
             <div class="nav-navs">
                 <ul>
@@ -132,10 +133,11 @@ nisembedded • Setup ADALM Pluto on Apple Sillicon</title>
     </nav>
 </header>
 
-    <div class="content">
+    <div class="content" id="main-content">
 
         
         
+
 
 
 
@@ -154,122 +156,107 @@ nisembedded • Setup ADALM Pluto on Apple Sillicon</title>
         </ul>
             <p class="p-summary" hidden>Setup AD ADALM Pluto on Apple Sillicon based MacBook Pro</p><section class="e-content body"><h2 id="for-begining"><a class="header-anchor no-hover-padding" href="#for-begining" aria-label="Anchor link for: for-begining"><span class="link-icon" aria-hidden="true"></span></a>
 For begining</h2>
-<p>In this tutorial I'll try to collect every options and commands for how to setup ADALM Pluto on typical Apple Sillicon based devices (MacBook's includes Pro versions, iMacs, etc)</p>
+<p>In this tutorial I’ll try to collect every options and commands for how to setup ADALM Pluto on typical Apple Sillicon based devices (MacBook’s includes Pro versions, iMacs, etc)</p>
 <h2 id="brew"><a class="header-anchor no-hover-padding" href="#brew" aria-label="Anchor link for: brew"><span class="link-icon" aria-hidden="true"></span></a>
 Brew</h2>
 <p>Update current state of brew to latest one</p>
-<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> update</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> upgrade</span>
-</span></code></pre>
-<p>Install ADALM Pluto related tap. Don't worry that origin address, this guy works for AD officially.</p>
-<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> tap tfcollins/homebrew-formulae</span>
-</span></code></pre>
+<pre class="giallo z-code"><code data-lang="shellscript"><span class="giallo-l"><span class="z-entity z-name z-function">brew</span><span class="z-string"> update</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">brew</span><span class="z-string"> upgrade</span></span></code></pre>
+<p>Install ADALM Pluto related tap. Don’t worry that origin address, this guy works for AD officially.</p>
+<pre class="giallo z-code"><code data-lang="shellscript"><span class="giallo-l"><span class="z-entity z-name z-function">brew</span><span class="z-string"> tap tfcollins/homebrew-formulae</span></span></code></pre>
 <p>Than install components for ADALM Pluto.</p>
-<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">brew</span></span><span class="z-meta z-function-call z-arguments z-shell"> install libiio libad9361-iio</span>
-</span></code></pre>
-<h2 id="pluto"><a class="header-anchor no-hover-padding" href="#pluto" aria-label="Anchor link for: pluto"><span class="link-icon" aria-hidden="true"></span></a>
+<pre class="giallo z-code"><code data-lang="shellscript"><span class="giallo-l"><span class="z-entity z-name z-function">brew</span><span class="z-string"> install libiio libad9361-iio</span></span></code></pre><h2 id="pluto"><a class="header-anchor no-hover-padding" href="#pluto" aria-label="Anchor link for: pluto"><span class="link-icon" aria-hidden="true"></span></a>
 Pluto</h2>
 <p>Plug the device to your Mac, on the desktop will showned PlutoSDR disk.</p>
-<p>Use <code>iio_info</code> utitlity to check that device completed booting  process and it's ready to be used.</p>
-<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iio_info</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>s</span></span>
-</span><span class="z-source z-shell z-bash">
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Library</span></span><span class="z-meta z-function-call z-arguments z-shell"> version: 0.23 (git tag: v0.23</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Compiled</span></span><span class="z-meta z-function-call z-arguments z-shell"> with backends: xml ip usb</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Unable</span></span><span class="z-meta z-function-call z-arguments z-shell"> to create Local IIO context : Function not implemented (78</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Available</span></span><span class="z-meta z-function-call z-arguments z-shell"> contexts:</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">0:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0456:b673 (Analog Devices Inc. PlutoSDR (ADALM-PLUTO</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">,</span></span><span class="z-meta z-function-call z-arguments z-shell"> serial=1...0 <span class="z-keyword z-control z-regexp z-set z-begin z-shell">[</span>usb:2<span class="z-punctuation z-separator z-collate z-begin z-shell">.</span>4<span class="z-punctuation z-separator z-collate z-end z-shell">.</span>5<span class="z-keyword z-control z-regexp z-set z-end z-shell">]</span></span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">1:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 192.168.2.1 (Analog Devices PlutoSDR Rev.C (Z7010-AD9364</span><span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"></span>)<span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">,</span></span><span class="z-meta z-function-call z-arguments z-shell"> serial=1...0 <span class="z-keyword z-control z-regexp z-set z-begin z-shell">[</span>ip:pluto.local.<span class="z-keyword z-control z-regexp z-set z-end z-shell">]</span></span>
-</span><span class="z-source z-shell z-bash">
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">iio_info</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>u</span> <span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>usb:2.4.5<span class="z-punctuation z-definition z-string z-end z-shell">&#39;</span></span></span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Library</span></span><span class="z-meta z-function-call z-arguments z-shell"> version: 0.23 (git tag: v0.23</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Compiled</span></span><span class="z-meta z-function-call z-arguments z-shell"> with backends: xml ip usb</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">IIO</span></span><span class="z-meta z-function-call z-arguments z-shell"> context created with usb backend.</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Backend</span></span><span class="z-meta z-function-call z-arguments z-shell"> version: 0.24 (git tag: v0.24</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Backend</span></span><span class="z-meta z-function-call z-arguments z-shell"> description string: Linux (none</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">5.10.0-98231-g9dfba10b795d <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell">54 SMP PREEMPT Mon Jul 11 14:38:48 CEST 2022 armv7l</span><span class="z-comment z-line z-number-sign z-shell">
-</span></span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">IIO</span></span><span class="z-meta z-function-call z-arguments z-shell"> context has 15 attributes:</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hw_model:</span></span><span class="z-meta z-function-call z-arguments z-shell"> Analog Devices PlutoSDR Rev.C (Z7010-AD9364</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hw_model_variant:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">hw_serial:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1...0</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">fw_version:</span></span><span class="z-meta z-function-call z-arguments z-shell"> v0.35</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ad9361-phy,xo_correction:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 40000046</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">ad9361-phy,model:</span></span><span class="z-meta z-function-call z-arguments z-shell"> ad9364</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell">    <span class="z-storage z-modifier z-shell">local</span><span class="z-variable z-other z-readwrite z-assignment z-shell">,kernel:</span> <span class="z-variable z-other z-readwrite z-assignment z-shell">5.10.0-98231-g9dfba10b795d</span></span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">uri:</span></span><span class="z-meta z-function-call z-arguments z-shell"> usb:2.4.5</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,idVendor:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 0456</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,idProduct:</span></span><span class="z-meta z-function-call z-arguments z-shell"> b673</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,release:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 2.0</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,vendor:</span></span><span class="z-meta z-function-call z-arguments z-shell"> Analog Devices Inc.</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,product:</span></span><span class="z-meta z-function-call z-arguments z-shell"> PlutoSDR (ADALM-PLUTO</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,serial:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1...0</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">usb,libusb:</span></span><span class="z-meta z-function-call z-arguments z-shell"> 1.0.27.11882</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">IIO</span></span><span class="z-meta z-function-call z-arguments z-shell"> context has 4 devices:</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">...</span></span>
-</span></code></pre>
-<h2 id="python"><a class="header-anchor no-hover-padding" href="#python" aria-label="Anchor link for: python"><span class="link-icon" aria-hidden="true"></span></a>
+<p>Use <code>iio_info</code> utitlity to check that device completed booting  process and it’s ready to be used.</p>
+<pre class="giallo z-code"><code data-lang="shellscript"><span class="giallo-l"><span class="z-entity z-name z-function">iio_info</span><span class="z-string"> -s</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Library</span><span class="z-string"> version:</span><span class="z-constant z-numeric"> 0.23</span><span class="z-source"> (git</span><span class="z-string"> tag: v0.23</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Compiled</span><span class="z-string"> with backends: xml ip usb</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Unable</span><span class="z-string"> to create Local IIO context : Function not implemented</span><span class="z-source"> (78)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Available</span><span class="z-string"> contexts:</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    0:</span><span class="z-string"> 0456:b673</span><span class="z-source"> (Analog</span><span class="z-string"> Devices Inc. PlutoSDR</span><span class="z-source"> (ADALM-PLUTO)), serial</span><span class="z-keyword z-operator">=</span><span class="z-string">1...0</span><span class="z-entity z-name z-function"> [usb:2.4.5]</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    1:</span><span class="z-constant z-numeric"> 192.168.2.1</span><span class="z-source"> (Analog</span><span class="z-string"> Devices PlutoSDR Rev.C</span><span class="z-source"> (Z7010-AD9364)), serial</span><span class="z-keyword z-operator">=</span><span class="z-string">1...0</span><span class="z-entity z-name z-function"> [ip:pluto.local.]</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">iio_info</span><span class="z-string z-punctuation z-definition z-string"> -u &#39;usb:2.4.5&#39;</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Library</span><span class="z-string"> version:</span><span class="z-constant z-numeric"> 0.23</span><span class="z-source"> (git</span><span class="z-string"> tag: v0.23</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Compiled</span><span class="z-string"> with backends: xml ip usb</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">IIO</span><span class="z-string"> context created with usb backend.</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Backend</span><span class="z-string"> version:</span><span class="z-constant z-numeric"> 0.24</span><span class="z-source"> (git</span><span class="z-string"> tag: v0.24</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Backend</span><span class="z-string"> description string: Linux</span><span class="z-source"> (none) 5.10.0-98231-g9dfba10b795d</span><span class="z-punctuation z-definition z-comment z-comment"> #54 SMP PREEMPT Mon Jul 11 14:38:48 CEST 2022 armv7l</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">IIO</span><span class="z-string"> context has</span><span class="z-constant z-numeric"> 15</span><span class="z-string"> attributes:</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    hw_model:</span><span class="z-string"> Analog Devices PlutoSDR Rev.C</span><span class="z-source"> (Z7010-AD9364)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    hw_model_variant:</span><span class="z-constant z-numeric"> 1</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    hw_serial:</span><span class="z-string"> 1...0</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    fw_version:</span><span class="z-string"> v0.35</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    ad9361-phy,xo_correction:</span><span class="z-constant z-numeric"> 40000046</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    ad9361-phy,model:</span><span class="z-string"> ad9364</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    local,kernel:</span><span class="z-string"> 5.10.0-98231-g9dfba10b795d</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    uri:</span><span class="z-string"> usb:2.4.5</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    usb,idVendor:</span><span class="z-constant z-numeric"> 0456</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    usb,idProduct:</span><span class="z-string"> b673</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    usb,release:</span><span class="z-constant z-numeric"> 2.0</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    usb,vendor:</span><span class="z-string"> Analog Devices Inc.</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    usb,product:</span><span class="z-string"> PlutoSDR</span><span class="z-source"> (ADALM-PLUTO)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    usb,serial:</span><span class="z-string"> 1...0</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    usb,libusb:</span><span class="z-constant z-numeric"> 1.0.27.11882</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">IIO</span><span class="z-string"> context has</span><span class="z-constant z-numeric"> 4</span><span class="z-string"> devices:</span></span>
+<span class="giallo-l"><span class="z-support z-function z-builtin">...</span></span></code></pre><h2 id="python"><a class="header-anchor no-hover-padding" href="#python" aria-label="Anchor link for: python"><span class="link-icon" aria-hidden="true"></span></a>
 Python</h2>
 <p>So system installed python or provided by <code>brew</code> have some restrictions about install packages from pip source.</p>
-<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">pip3</span></span><span class="z-meta z-function-call z-arguments z-shell"> install pyadi-iio</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">error:</span></span><span class="z-meta z-function-call z-arguments z-shell"> externally-managed-environment</span>
-</span><span class="z-source z-shell z-bash">
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">×</span></span><span class="z-meta z-function-call z-arguments z-shell"> This environment is externally managed</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">╰─</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> To install Python packages system-wide, try brew install</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">xyz,</span></span><span class="z-meta z-function-call z-arguments z-shell"> where xyz is the package you are trying to</span>
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">install.</span></span>
-</span><span class="z-source z-shell z-bash">
-</span><span class="z-source z-shell z-bash">    <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">If</span></span><span class="z-meta z-function-call z-arguments z-shell"> you wish to install a Python library that isn<span class="z-string z-quoted z-single z-shell"><span class="z-punctuation z-definition z-string z-begin z-shell">&#39;</span>t in Homebrew,
-</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-arguments z-shell"><span class="z-string z-quoted z-single z-shell">    use a virtual environment:
-</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-arguments z-shell"><span class="z-string z-quoted z-single z-shell">
-</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-arguments z-shell"><span class="z-string z-quoted z-single z-shell">    python3 -m venv path/to/venv
-</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-arguments z-shell"><span class="z-string z-quoted z-single z-shell">    source path/to/venv/bin/activate
-</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-arguments z-shell"><span class="z-string z-quoted z-single z-shell">    python3 -m pip install xyz
-</span></span></span></code></pre>
+<pre class="giallo z-code"><code data-lang="shellscript"><span class="giallo-l"><span class="z-entity z-name z-function">pip3</span><span class="z-string"> install pyadi-iio</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">error:</span><span class="z-string"> externally-managed-environment</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">×</span><span class="z-string"> This environment is externally managed</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">╰─</span><span class="z-source">&gt;</span><span class="z-string"> To install Python packages system-wide, try brew install</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    xyz,</span><span class="z-string"> where xyz is the package you are trying to</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    install.</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">    If</span><span class="z-string z-punctuation z-definition z-string"> you wish to install a Python library that isn&#39;t in Homebrew,</span></span>
+<span class="giallo-l"><span class="z-string">    use a virtual environment:</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-string">    python3 -m venv path/to/venv</span></span>
+<span class="giallo-l"><span class="z-string">    source path/to/venv/bin/activate</span></span>
+<span class="giallo-l"><span class="z-string">    python3 -m pip install xyz</span></span></code></pre>
 <p>Instead of that I highly recommend to use virtual env based installation or conda.</p>
 <p>For example you have your directory of <code>venv</code> named <code>Develop/bin</code> and <code>Develop</code> placed in your home directory.</p>
-<p>Let's create virtual env for this path:</p>
-<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">python3</span></span><span class="z-meta z-function-call z-arguments z-shell"><span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> -</span>m</span> venv <span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/Develop<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>system-site-packages</span></span>
-</span></code></pre>
+<p>Let’s create virtual env for this path:</p>
+<pre class="giallo z-code"><code data-lang="shellscript"><span class="giallo-l"><span class="z-entity z-name z-function">python3</span><span class="z-string"> -m venv ~/Develop --system-site-packages</span></span></code></pre>
 <p>After installation of package will be simply as expected:</p>
-<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell"><span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/Develop/bin/pip</span></span><span class="z-meta z-function-call z-arguments z-shell"> install pyadi-iio</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Collecting</span></span><span class="z-meta z-function-call z-arguments z-shell"> pyadi-iio</span>
-</span><span class="z-source z-shell z-bash">  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Downloading</span></span><span class="z-meta z-function-call z-arguments z-shell"> pyadi_iio-0.0.19-py3-none-any.whl.metadata (4.5 kB</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Requirement</span></span><span class="z-meta z-function-call z-arguments z-shell"> already satisfied: numpy<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>=1.20 in /opt/homebrew/lib/python3.13/site-packages (from pyadi-iio</span><span class="z-meta z-function-call z-shell"></span>) <span class="z-punctuation z-definition z-compound z-begin z-shell">(</span><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">2.2.5</span></span><span class="z-punctuation z-definition z-compound z-end z-shell">)</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Collecting</span></span><span class="z-meta z-function-call z-arguments z-shell"> pylibiio<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span>=0.25 (from pyadi-iio</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash">  <span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Using</span></span><span class="z-meta z-function-call z-arguments z-shell"> cached pylibiio-0.25-py3-none-any.whl.metadata (5.9 kB</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Downloading</span></span><span class="z-meta z-function-call z-arguments z-shell"> pyadi_iio-0.0.19-py3-none-any.whl (188 kB</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Using</span></span><span class="z-meta z-function-call z-arguments z-shell"> cached pylibiio-0.25-py3-none-any.whl (11 kB</span><span class="z-meta z-function-call z-shell"></span>)
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Installing</span></span><span class="z-meta z-function-call z-arguments z-shell"> collected packages: pylibiio, pyadi-iio</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">Successfully</span></span><span class="z-meta z-function-call z-arguments z-shell"> installed pyadi-iio-0.0.19 pylibiio-0.25</span>
-</span><span class="z-source z-shell z-bash">
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">[notice]</span></span><span class="z-meta z-function-call z-arguments z-shell"> A new release of pip is available: 25.0.1 -<span class="z-keyword z-operator z-assignment z-redirection z-shell">&gt;</span> <span class="z-constant z-numeric z-integer z-decimal z-file-descriptor z-shell">25</span>.1.1</span>
-</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">[notice]</span></span><span class="z-meta z-function-call z-arguments z-shell"> To update, run: pip3 install<span class="z-variable z-parameter z-option z-shell"><span class="z-punctuation z-definition z-parameter z-shell"> --</span>upgrade</span> pip</span>
-</span></code></pre>
-<h2 id="let-s-talks-with-adalm-pluto"><a class="header-anchor no-hover-padding" href="#let-s-talks-with-adalm-pluto" aria-label="Anchor link for: let-s-talks-with-adalm-pluto"><span class="link-icon" aria-hidden="true"></span></a>
-Let's talks with ADALM Pluto</h2>
+<pre class="giallo z-code"><code data-lang="shellscript"><span class="giallo-l"><span class="z-keyword z-operator">~</span><span class="z-source">/Develop/bin/pip install pyadi-iio</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Collecting</span><span class="z-string"> pyadi-iio</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">  Downloading</span><span class="z-string"> pyadi_iio-0.0.19-py3-none-any.whl.metadata</span><span class="z-source"> (4.5</span><span class="z-string"> kB</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Requirement</span><span class="z-string"> already satisfied: nump</span><span class="z-source">y</span><span class="z-keyword z-operator">&gt;</span><span class="z-string">=</span><span class="z-constant z-numeric">1.20</span><span class="z-string"> in /opt/homebrew/lib/python3.13/site-packages</span><span class="z-source"> (from</span><span class="z-string"> pyadi-iio</span><span class="z-source">) (</span><span class="z-entity z-name z-function">2.2.5</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Collecting</span><span class="z-string"> pylibii</span><span class="z-source">o</span><span class="z-keyword z-operator">&gt;</span><span class="z-string">=</span><span class="z-constant z-numeric">0.25</span><span class="z-source"> (from</span><span class="z-string"> pyadi-iio</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">  Using</span><span class="z-string"> cached pylibiio-0.25-py3-none-any.whl.metadata</span><span class="z-source"> (5.9</span><span class="z-string"> kB</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Downloading</span><span class="z-string"> pyadi_iio-0.0.19-py3-none-any.whl</span><span class="z-source"> (188</span><span class="z-string"> kB</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Using</span><span class="z-string"> cached pylibiio-0.25-py3-none-any.whl</span><span class="z-source"> (11</span><span class="z-string"> kB</span><span class="z-source">)</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Installing</span><span class="z-string"> collected packages: pylibiio, pyadi-iio</span></span>
+<span class="giallo-l"><span class="z-entity z-name z-function">Successfully</span><span class="z-string"> installed pyadi-iio-0.0.19 pylibiio-0.25</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-punctuation">[</span><span class="z-source">notice</span><span class="z-punctuation">]</span><span class="z-source"> A new release of pip is available: 25.0.1 -</span><span class="z-keyword z-operator">&gt;</span><span class="z-source"> 25.1.1</span></span>
+<span class="giallo-l"><span class="z-punctuation">[</span><span class="z-source">notice</span><span class="z-punctuation">]</span><span class="z-source"> To update, run: pip3 install --upgrade pip</span></span></code></pre><h2 id="let-s-talks-with-adalm-pluto"><a class="header-anchor no-hover-padding" href="#let-s-talks-with-adalm-pluto" aria-label="Anchor link for: let-s-talks-with-adalm-pluto"><span class="link-icon" aria-hidden="true"></span></a>
+Let’s talks with ADALM Pluto</h2>
 <p>Run python from our <code>venv</code> where we already installed <code>pyadi-iio</code> package:</p>
-<pre data-lang="zsh" class="language-zsh z-code"><code class="language-zsh" data-lang="zsh"><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell"><span class="z-meta z-group z-expansion z-tilde"><span class="z-variable z-language z-tilde z-shell">~</span></span>/Develop/bin/python</span></span>
-</span></code></pre>
-<pre data-lang="python" class="language-python z-code"><code class="language-python" data-lang="python"><span class="z-source z-python"><span class="z-meta z-statement z-import z-python"><span class="z-keyword z-control z-import z-python">import</span> <span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">adi</span></span></span>
-</span><span class="z-source z-python">
-</span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> Create device from specific uri address
-</span></span><span class="z-source z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">sdr</span></span> <span class="z-keyword z-operator z-assignment z-python">=</span> <span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">adi</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">ad9364</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-variable z-parameter z-python">uri</span><span class="z-keyword z-operator z-assignment z-python">=</span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python"><span class="z-punctuation z-definition z-string z-begin z-python">&quot;</span></span></span><span class="z-meta z-string z-python"><span class="z-string z-quoted z-double z-python">usb:2.4.5<span class="z-punctuation z-definition z-string z-end z-python">&quot;</span></span></span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
-</span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> Get data from receiver channel
-</span></span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> Should return like this
-</span></span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> array([-15.-42.j, -60.-68.j, -44. -6.j, ...,  24. -5.j, -20. +1.j,
-</span></span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span>        -4.-28.j])
-</span></span><span class="z-source z-python"><span class="z-comment z-line z-number-sign z-python"><span class="z-punctuation z-definition z-comment z-python">#</span> for every calls 
-</span></span><span class="z-source z-python"><span class="z-meta z-function-call z-python"><span class="z-meta z-qualified-name z-python"><span class="z-meta z-generic-name z-python">sdr</span></span><span class="z-meta z-qualified-name z-python"><span class="z-punctuation z-accessor z-dot z-python">.</span></span><span class="z-meta z-qualified-name z-python"><span class="z-variable z-function z-python"><span class="z-meta z-generic-name z-python">rx</span></span></span></span><span class="z-meta z-function-call z-arguments z-python"><span class="z-punctuation z-section z-arguments z-begin z-python">(</span><span class="z-punctuation z-section z-arguments z-end z-python">)</span></span>
-</span></code></pre>
+<pre class="giallo z-code"><code data-lang="shellscript"><span class="giallo-l"><span class="z-keyword z-operator">~</span><span class="z-source">/Develop/bin/python</span></span></code></pre><pre class="giallo z-code"><code data-lang="python"><span class="giallo-l"><span class="z-keyword">import</span><span class="z-source"> adi</span></span>
+<span class="giallo-l"></span>
+<span class="giallo-l"><span class="z-punctuation z-definition z-comment z-comment"># Create device from specific uri address</span></span>
+<span class="giallo-l"><span class="z-source">sdr</span><span class="z-keyword z-operator"> =</span><span class="z-source"> adi</span><span class="z-punctuation">.</span><span class="z-meta z-function-call z-python">ad9364</span><span class="z-punctuation">(</span><span class="z-variable z-parameter">uri</span><span class="z-keyword z-operator">=</span><span class="z-punctuation z-definition z-string z-string">&quot;usb:2.4.5&quot;</span><span class="z-punctuation">)</span></span>
+<span class="giallo-l"><span class="z-punctuation z-definition z-comment z-comment"># Get data from receiver channel</span></span>
+<span class="giallo-l"><span class="z-punctuation z-definition z-comment z-comment"># Should return like this</span></span>
+<span class="giallo-l"><span class="z-punctuation z-definition z-comment z-comment"># array([-15.-42.j, -60.-68.j, -44. -6.j, ...,  24. -5.j, -20. +1.j,</span></span>
+<span class="giallo-l"><span class="z-punctuation z-definition z-comment z-comment">#        -4.-28.j])</span></span>
+<span class="giallo-l"><span class="z-punctuation z-definition z-comment z-comment"># for every calls </span></span>
+<span class="giallo-l"><span class="z-source">sdr</span><span class="z-punctuation">.</span><span class="z-meta z-function-call z-python">rx</span><span class="z-punctuation">()</span></span></code></pre>
 <p>Sometimes python crashes on internals of pyiio library. I hope it was on C part.</p>
 <h3 id="links"><a class="header-anchor no-hover-padding" href="#links" aria-label="Anchor link for: links"><span class="link-icon" aria-hidden="true"></span></a>
 Links</h3>
 <ul>
-<li><a href="https://github.com/tfcollins/homebrew-formulae">main tap</a></li>
-<li><a href="https://github.com/analogdevicesinc/pyadi-iio">pyadi-iio</a></li>
+<li><a class="external" rel="external" href="https://github.com/tfcollins/homebrew-formulae">main tap</a></li>
+<li><a class="external" rel="external" href="https://github.com/analogdevicesinc/pyadi-iio">pyadi-iio</a></li>
 </ul>
 
         </section>
-
-        
         
         
 
@@ -348,6 +335,14 @@ Links</h3>
                                 </a>
                             </li>
                         
+                            <li>
+                                <a class="nav-links no-hover-padding social" rel=" me" 
+
+ href="https://twitter.com/nisembedded">
+                                    <img loading="lazy" alt="twitter" title="twitter" src="https://nisembedded.github.io/social_icons/twitter.svg">
+                                </a>
+                            </li>
+                        
                     
                 </ul>
             
@@ -381,7 +376,7 @@ Links</h3>
 
     
     
-    <p><p>Copyright © 2024 - 2025 Boris Vinogradov • Unless otherwise noted, the content of this website is available under the <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0</a> license.</p>
+    <p><p>Copyright © 2024 - 2026 Boris Vinogradov • Unless otherwise noted, the content of this website is available under the <a class="external" rel="external" href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0</a> license.</p>
 </p>
 
                 

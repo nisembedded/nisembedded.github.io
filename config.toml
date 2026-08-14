@@ -27,10 +27,17 @@ id = "7f0ca481-23cb-48e1-be7d-82f6604e30f1"
 
 
 [markdown]
-# Whether to do syntax highlighting
-# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
-highlight_code = true
-highlight_theme = "css"
+bottom_footnotes = true
+smart_punctuation = true
+# Set to 'external' to add an indicator next to external links.
+external_links_class = "external"
+# Render GitHub-style alerts, e.g. `> [!NOTE]`. Requires Zola 0.21+.
+github_alerts = true
+
+[markdown.highlighting]
+theme = "catppuccin-frappe"
+style = "class"
+error_on_missing_language = true
 
 [extra]
 menu = [
@@ -44,6 +51,7 @@ socials = [
 	{ name = "github", url = "https://github.com/nisembedded/", icon = "github" },
 	{ name = "instagram", url = "https://instagram.com/nisembedded", icon = "instagram" },
     { name = "youtube", url = "https://www.youtube.com/@NisEmbedded", icon = "youtube"},
+    { name = "twitter", url = "https://twitter.com/nisembedded", icon = "twitter"},
 ]
 
 email = "nisembedded@gmail.com"
